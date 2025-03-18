@@ -4636,26 +4636,6 @@ body
 {
    outline: 0;
 }
-#Label7
-{
-   margin: 0;
-   border: 0px solid #CCCCCC;
-   border-radius: 4px;
-   background-color: transparent;
-   background-image: none;
-   color: #333333;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   text-align: left;
-   vertical-align: top;
-   padding: 4px 4px 4px 4px;
-}
-#Label7:focus
-{
-   outline: 0;
-}
 #Label8
 {
    box-sizing: border-box;
@@ -4674,27 +4654,6 @@ body
    padding: 4px 4px 4px 4px;
 }
 #Label8:focus
-{
-   outline: 0;
-}
-#Label9
-{
-   box-sizing: border-box;
-   margin: 0;
-   border: 0px solid #CCCCCC;
-   border-radius: 4px;
-   background-color: transparent;
-   background-image: none;
-   color: #333333;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   text-align: left;
-   vertical-align: top;
-   padding: 4px 4px 4px 4px;
-}
-#Label9:focus
 {
    outline: 0;
 }
