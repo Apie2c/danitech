@@ -8,7 +8,7 @@
 <link href="css/base/jquery-ui.min.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/author.css" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
+<link href="css/wb17_author.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -225,7 +225,7 @@ $(document).ready(function()
    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
    if (iOS)
    {
-      $('#wb_intro,#wb_faqLayoutGrid,#wb_contact').css('background-attachment', 'scroll');
+      $('#wb_faqLayoutGrid,#wb_contact').css('background-attachment', 'scroll');
    }
    $('body').on('click','[data-ecommerce-platform="paypal"]', function(e)
    {
@@ -248,6 +248,24 @@ $(document).ready(function()
          cancel_return: $(this).attr('data-cancel-url')
       });
    });
+   $('body').on('click','[data-ecommerce-platform="webmoney"]', function(e)
+   {
+      e.preventDefault();
+      var payeePurse = $(this).attr('data-payee-purse');
+      var paymentDesc = $(this).attr('data-payment-desc')
+      var paymentAmount = $(this).attr('data-payment-amount')
+      var successUrl = $(this).attr('data-success-url');
+      var failUrl = $(this).attr('data-fail-url');
+      var webMoneyForm = $('<form>', { 'action': 'https://merchant.wmtransfer.com/lmi/payment.asp', 'method' : 'POST' });
+      webMoneyForm.append($('<input>', { 'name': 'LMI_PAYEE_PURSE', 'value': payeePurse, 'type': 'hidden' }));
+      webMoneyForm.append($('<input>', { 'name': 'LMI_PAYMENT_DESC', 'value': paymentDesc, 'type': 'hidden' }));
+      webMoneyForm.append($('<input>', { 'name': 'LMI_PAYMENT_AMOUNT', 'value': paymentAmount, 'type': 'hidden' }));
+      webMoneyForm.append($('<input>', { 'name': 'LMI_SUCCESS_URL', 'value': successUrl, 'type': 'hidden' }));
+      webMoneyForm.append($('<input>', { 'name': 'LMI_FAIL_URL', 'value': failUrl, 'type': 'hidden' }));
+      webMoneyForm.append($('<input>', { 'name': 'LMI_SIM_MODE', 'value': '0', 'type': 'hidden' }));
+      webMoneyForm.hide().appendTo('body');
+      webMoneyForm.submit();
+   });
 });
 </script>
 </head>
@@ -268,7 +286,6 @@ $(document).ready(function()
 <li role="menuitem"><a href="#coffee" class="nav-link">Blog</a></li>
 <li role="menuitem"><a href="#prices" class="nav-link">Shop</a></li>
 <li role="menuitem"><a href="#contact" class="nav-link">Contact</a></li>
-<li role="menuitem"><a href="file:///C:/wamp64/www/Healthier%20You/Design-1/index.html" class="nav-link">Healthier You</a></li>
 </ul>
 </div>
 
@@ -302,9 +319,6 @@ $(document).ready(function()
 <li class="nav-item">
 <a href="#contact" class="nav-link">Contact</a>
 </li>
-<li class="nav-item">
-<a href="file:///C:/wamp64/www/Healthier%20You/Design-1/index.html" class="nav-link">Healthier You</a>
-</li>
 </ul>
 </div>
 </div>
@@ -315,8 +329,6 @@ $(document).ready(function()
 </div>
 </div>
 <div id="wb_intro">
-<div id="intro-video"><video src="4860897-uhd_4096_2160_25fps.mp4" autoplay loop muted playsinline></video>
-</div>
 <div id="intro">
 <div class="col-1">
 <div class="col-1-padding">
@@ -409,15 +421,15 @@ $(document).ready(function()
 <div id="booksLayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_booksCard1" style="display:flex;width:100%;z-index:17;" class="card">
+<div id="wb_booksCard1" style="display:flex;width:100%;z-index:17;" class="card" data-ecommerce-platform="webmoney" data-payee-purse="Z561316441537" data-payment-desc="Daniel Apiedu" data-payment-amount="1" data-success-url="http://www.yourwebsite.com/" data-fail-url="http://www.yourwebsite.com/">
 <div id="booksCard1-card-body">
-<img id="booksCard1-card-item0" src="images/BookMockup13.png" width="600" height="400" alt="Bestseller #1" title="Bestseller #1">
-<div id="booksCard1-card-item1">BESTSELLER #1</div>
+<img id="booksCard1-card-item0" src="images/ezine1.jpg" width="500" height="367" alt="Bestseller #1" title="Bestseller #1">
+<div id="booksCard1-card-item1">HEALTHIER YOU</div>
 <div id="booksCard1-card-item2">$29.99</div>
 <hr id="booksCard1-card-item3">
-<div id="booksCard1-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div id="booksCard1-card-item4">Transform your well-being with *Healthier You*, an insightful e-book designed to help you build a healthier lifestyle. Packed with practical tips on nutrition, exercise, stress management, and mindful living, this guide empowers you to take control of your health. Whether you're looking to boost energy, improve your diet, or develop sustainable habits, *Healthier You* provides the knowledge and motivation you need to thrive. Start your journey to a better you today!</div>
 </div>
-<div id="booksCard1-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #1" data-item-number="SKU001" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
+<div id="booksCard1-card-item5" data-ecommerce-platform="webmoney" data-payee-purse="SKU001" data-payment-desc="Bestseller #1" data-payment-amount="29.99" data-success-url="http://www.yourwebsite.com/" data-fail-url="http://www.yourwebsite.com/"><a href="#" class="stretched-link">Add to Cart</a></div>
 </div>
 </div>
 <div class="col-2">
@@ -671,16 +683,16 @@ $(document).ready(function()
 <h3 id="contactHeading4">Social Media</h3>
 </div>
 <div id="wb_contactIcon1" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:44;">
-<a href="./index.html"><div id="contactIcon1"><i class="fa fa-rss"></i></div></a>
+<a href="./wb17_author.html"><div id="contactIcon1"><i class="fa fa-rss"></i></div></a>
 </div>
 <div id="wb_contactIcon2" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:45;">
-<a href="./index.html"><div id="contactIcon2"><i class="fa fa-facebook"></i></div></a>
+<a href="./wb17_author.html"><div id="contactIcon2"><i class="fa fa-facebook"></i></div></a>
 </div>
 <div id="wb_contactIcon3" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:46;">
-<a href="./index.html"><div id="contactIcon3"><i class="fa fa-twitter"></i></div></a>
+<a href="./wb17_author.html"><div id="contactIcon3"><i class="fa fa-twitter"></i></div></a>
 </div>
 <div id="wb_contactIcon4" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:47;">
-<a href="./index.html"><div id="contactIcon4"><i class="fa fa-youtube-play"></i></div></a>
+<a href="./wb17_author.html"><div id="contactIcon4"><i class="fa fa-youtube-play"></i></div></a>
 </div>
 </div>
 <div class="col-2">
