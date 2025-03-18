@@ -2990,96 +2990,6 @@ body
    font-style: normal;
    font-size: 16px;
 }
-#wb_booksCard1
-{
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   box-sizing: border-box;
-   margin: 0 0 25px 0 ;
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 1px solid #DEDEDE;
-   border-radius: 0px;
-   text-align: center;
-}
-#booksCard1-card-body
-{
-   padding: 0;
-   flex: 1 1 auto;
-   font-size: 0;
-}
-.stretched-link::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-   background-color: rgba(0,0,0,0);
-}
-#booksCard1-card-item0
-{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   border: 0px solid #838383;
-   border-radius: 0px;
-   max-width: 100%;
-   width: 100%;
-   height: auto;
-}
-#booksCard1-card-item1
-{
-   box-sizing: border-box;
-   margin: 20px 10px 10px 10px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 21px;
-}
-#booksCard1-card-item2
-{
-   display: inline-block;
-   height: 35px;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 8px 4px 8px 4px;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   background-color: transparent;
-   background-image: none;
-   color: #696969;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 19px;
-}
-#booksCard1-card-item3
-{
-   box-sizing: border-box;
-   margin: 12px 0 0 0 ;
-   border-top: 1px #FFFFFF solid;
-   border-width: 1px 0 0 0;
-   height: 0;
-   line-height: 0;
-}
-#booksCard1-card-item4
-{
-   box-sizing: border-box;
-   margin: 0 20px 20px 20px;
-   padding: 0;
-   color: #696969;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-}
 #wb_booksCard2
 {
    position: relative;
@@ -4550,4 +4460,158 @@ body
 {
    color: inherit;
    text-decoration: none;
+}
+#wb_Image1
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 191px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#Label1
+{
+   box-sizing: border-box;
+   margin: 0;
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color: #333333;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 21px;
+   text-align: center;
+   vertical-align: top;
+   padding: 4px 4px 4px 4px;
+}
+#Label1:focus
+{
+   outline: 0;
+}
+#Label2
+{
+   box-sizing: border-box;
+   margin: 0;
+   border: 0px solid #000000;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color: #696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   text-align: center;
+   vertical-align: top;
+   padding: 4px 4px 4px 4px;
+}
+#Label2:focus
+{
+   outline: 0;
+}
+#Label3
+{
+   box-sizing: border-box;
+   margin: 0;
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color: #333333;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: top;
+   padding: 4px 4px 4px 4px;
+}
+#Label3:focus
+{
+   outline: 0;
+}
+#Label4
+{
+   box-sizing: border-box;
+   margin: 0;
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color: #333333;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: top;
+   padding: 4px 4px 4px 4px;
+}
+#Label4:focus
+{
+   outline: 0;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: justify;
+}
+#wb_Text1
+{
+   color: #696969;
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 16px;
+}
+#wb_Text1 p, #wb_Text1 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#Label5
+{
+   box-sizing: border-box;
+   margin: 0;
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color: #333333;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: top;
+   padding: 4px 4px 4px 4px;
+}
+#Label5:focus
+{
+   outline: 0;
 }
