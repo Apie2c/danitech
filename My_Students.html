@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dani-Tech Sol.</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="58fe10c9-cb15-4d3a-8dac-26a2a1d2c469.ico" rel="shortcut icon" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
+<link href="css/Dani-Tech_Sol.css" rel="stylesheet">
+<link href="css/My_Students.css" rel="stylesheet">
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#LayoutGrid8']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid8').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#welcome']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_welcome').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+<div id="wb_welcome">
+<div id="welcome-overlay"></div>
+<div id="welcome">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:0;">
+<h1 id="Heading1">SOLUTION TO ALL TECH PROBLEMS</h1>
+</div>
+<div id="wb_JavaScript1" style="display:block;width:100%;z-index:1;">
+<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
+<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
+</div>
+<script>
+var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
+var lines = data.split('^');
+var reverse = false;
+var index = 0;
+var text = '';
+var typeWriterElement = document.getElementById("typewriter-text");
+function typeWriterDeluxe() 
+{
+   var i = index % lines.length;
+   var line = lines[i];
+   if (reverse) 
+   {
+      text = line.substring(0, text.length - 1);
+   } 
+   else 
+   {
+      text = line.substring(0, text.length + 1);
+   }
+   typeWriterElement.innerHTML = text;
+   var timeout = 250 - Math.random() * (250/2);
+   if (reverse) 
+   { 
+      timeout /= 2; 
+   }
+   if (!reverse && text === line) 
+   {
+      timeout = 5000;
+      reverse = true;
+   } 
+   else 
+   if (reverse && text === '') 
+   {
+      reverse = false;
+      index++;
+      timeout = 500;
+   }
+   setTimeout(typeWriterDeluxe, timeout);
+}
+typeWriterDeluxe();
+</script>
+</div>
+<div id="wb_Heading2" style="display:block;width:100%;z-index:2;">
+<h2 id="Heading2"></h2>
+</div>
+<div id="wb_Heading5" style="display:block;width:100%;z-index:3;">
+<h2 id="Heading5"></h2>
+</div>
+<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:4;">
+<a class="ui-button ui-corner-all" id="ThemeableButton3" href="./support-us.html" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading6" style="display:block;width:100%;z-index:5;">
+<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<input type="submit" id="Button4" name="" value="Enroll Now" style="display:inline-block;width:184px;height:37px;z-index:6;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Divider1">
+<div id="Divider1-overlay"></div>
+<div id="Divider1">
+<div class="row">
+<div class="col-1">
+<hr id="DividerLine1" style="display:block;width: 100%;z-index:7;">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text1" style="position:absolute;left:1153px;top:108px;width:250px;height:15px;z-index:13;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">84D7D048</span></div>
+</body>
+</html>

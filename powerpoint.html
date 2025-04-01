@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dani-Tech Sol.</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="58fe10c9-cb15-4d3a-8dac-26a2a1d2c469.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
+<link href="css/Dani-Tech_Sol.css" rel="stylesheet">
+<link href="css/powerpoint.css" rel="stylesheet">
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.dropdown.min.js" defer></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var headerMenu_dropdownToggle = document.querySelectorAll('#headerMenu .dropdown-toggle');
+   headerMenu_dropdownToggle.forEach(item => 
+   {
+      var dropdown = new bootstrap.Dropdown(item, {popperConfig:{placement:item.getAttribute('data-bs-placement')}});
+   });
+   var headerMenu_dropdown = document.querySelectorAll('#headerMenu .dropdown');
+   headerMenu_dropdown.forEach(item => 
+   {
+      item.addEventListener('shown.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.add('show');
+      });
+      item.addEventListener('hidden.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.remove('show');
+      });
+   });
+   document.addEventListener('click', function (e)
+   {
+      var isChildOfDropdownMenu = false;
+      var target = e.target;
+      while (target !== null)
+      {
+         if (target.classList && target.classList.contains('headerMenu-navbar-collapse') && target.classList.contains('show'))
+         {
+            isChildOfDropdownMenu = true;
+            break;
+         }
+         target = target.parentNode;
+      }
+      if (isChildOfDropdownMenu)
+      {
+         if (e.target.tagName.toLowerCase() === 'a' && !e.target.classList.contains('dropdown-toggle'))
+         {
+            const dropdownMenu = document.querySelector('.headerMenu-navbar-collapse');
+            if (dropdownMenu)
+            {
+               const collapseInstance = bootstrap.Collapse.getInstance(dropdownMenu);
+               if (collapseInstance)
+               {
+                  collapseInstance.hide();
+               }
+            }
+         }
+      }
+   });
+   var aboutTabs_tabs = document.querySelectorAll('#aboutTabs a.nav-link');
+   aboutTabs_tabs.forEach(item => 
+   {
+      item.addEventListener('click', function(e)
+      {
+         e.preventDefault();
+         var tab = bootstrap.Tab.getOrCreateInstance(e.target);
+         tab.show();
+      });
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#welcome']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
+   });
+   $("a[href*='#about']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_about').offset().top-78 }, 600, 'easeOutQuart');
+   });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_welcome,#wb_LayoutGrid6,#wb_about').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_top">
+<div id="top">
+<div class="row">
+<div class="col-1">
+<div id="wb_Icon16" style="display:inline-block;width:22px;height:22px;opacity:0.75;text-align:center;z-index:1;">
+<a href="#"><div id="Icon16"><i class="fa fa-facebook"></i></div></a>
+</div>
+<div id="wb_Icon15" style="display:inline-block;width:22px;height:22px;opacity:0.75;text-align:center;z-index:2;">
+<a href="#"><div id="Icon15"><i class="fa fa-twitter"></i></div></a>
+</div>
+<div id="wb_Icon14" style="display:inline-block;width:22px;height:22px;opacity:0.75;text-align:center;z-index:3;">
+<a href="#"><div id="Icon14"><i class="fa fa-instagram"></i></div></a>
+</div>
+<div id="wb_Icon13" style="display:inline-block;width:22px;height:22px;opacity:0.75;text-align:center;z-index:4;">
+<a href="https://www.youtube.com/@relaxnearn5687"><div id="Icon13"><i class="fa fa-youtube-play"></i></div></a>
+</div>
+<div id="wb_Icon17" style="display:inline-block;width:22px;height:22px;opacity:0.75;text-align:center;z-index:5;">
+<a href="https://t.me/+gCA1GeicsGc2MzNk"><div id="Icon17"><i class="fa fa-telegram"></i></div></a>
+</div>
+<div id="wb_Icon18" style="display:inline-block;width:22px;height:22px;opacity:0.75;text-align:center;z-index:6;">
+<a href="https://chat.whatsapp.com/GVHLirbA8C85Hn3PDYDdoq"><div id="Icon18"><i class="fa fa-whatsapp"></i></div></a>
+</div>
+<div id="wb_Icon19" style="display:inline-block;width:22px;height:22px;opacity:0.75;text-align:center;z-index:7;">
+<a href="#"><div id="Icon19"><i class="fa fa-envelope-o"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:8;">
+<img src="images/LOG2.png" id="Image1" alt="" width="212" height="53">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:block;width:100%;z-index:9;">
+<div id="headerMenu" class="headerMenu" style ="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="" type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".headerMenu-navbar-collapse">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</button>
+</div>
+<div class="headerMenu-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="./index.html" class="nav-link">Home</a>
+</li>
+<li class="nav-item dropdown-hover dropdown">
+<a href="#" class="dropdown-toggle" data-bs-offset="0,1" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Learn<span class="arrow"></span></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item dropdown-hover dropdown">
+<a href="#" class="dropdown-toggle" data-bs-offset="0,1" data-bs-placement="right-start" data-bs-toggle="dropdown">Office<span class="arrow-right"></span></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="./word.html" class="nav-link">Word</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="./excel.html" class="nav-link">Excel</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="./powerpoint.html" class="nav-link">Power Point</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="./RESOURCES.html" class="nav-link">Resources</a>
+</li>
+<li class="nav-item">
+<a href="./about_us.html" class="nav-link">About</a>
+</li>
+<li class="nav-item dropdown-hover dropdown">
+<a href="#" class="dropdown-toggle" data-bs-offset="0,1" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Support Us<span class="arrow"></span></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="./MOMO.html" class="nav-link">Momo</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="./PAYPAL.html" class="nav-link">Paypal</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="./BITCOIN.html" class="nav-link">Bitcoin</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="./contact_us.html" class="nav-link">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:14;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:10;">
+<a href="#intro"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="stickylayerCart" style="position:fixed;text-align:left;left:auto;right:20px;top:65px;width:63px;height:88px;z-index:15;z-index: 9999 !important;">
+</div>
+<div id="Layer1" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:16;">
+<div id="wb_Icon1" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:11;">
+<a href="#intro"><div id="Icon1"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+
+
+<div id="wb_welcome">
+<div id="welcome-overlay"></div>
+<div id="welcome">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:17;">
+<h1 id="Heading1">BECOME AN EXPERT IN PRESENTATION</h1>
+</div>
+<div id="wb_JavaScript1" style="display:block;width:100%;z-index:18;">
+<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
+<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
+</div>
+<script>
+var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
+var lines = data.split('^');
+var reverse = false;
+var index = 0;
+var text = '';
+var typeWriterElement = document.getElementById("typewriter-text");
+function typeWriterDeluxe() 
+{
+   var i = index % lines.length;
+   var line = lines[i];
+   if (reverse) 
+   {
+      text = line.substring(0, text.length - 1);
+   } 
+   else 
+   {
+      text = line.substring(0, text.length + 1);
+   }
+   typeWriterElement.innerHTML = text;
+   var timeout = 250 - Math.random() * (250/2);
+   if (reverse) 
+   { 
+      timeout /= 2; 
+   }
+   if (!reverse && text === line) 
+   {
+      timeout = 5000;
+      reverse = true;
+   } 
+   else 
+   if (reverse && text === '') 
+   {
+      reverse = false;
+      index++;
+      timeout = 500;
+   }
+   setTimeout(typeWriterDeluxe, timeout);
+}
+typeWriterDeluxe();
+</script>
+</div>
+<div id="wb_Heading2" style="display:block;width:100%;z-index:19;">
+<h2 id="Heading2"></h2>
+</div>
+<div id="wb_Heading5" style="display:block;width:100%;z-index:20;">
+<h2 id="Heading5"></h2>
+</div>
+<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:21;">
+<a class="ui-button ui-corner-all" id="ThemeableButton3" href="./support-us.html" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading6" style="display:block;width:100%;z-index:22;">
+<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card4" style="display:flex;width:100%;z-index:23;" class="card">
+<div id="Card4-card-body">
+<div id="Card4-card-item0">Computer / Mobile servicing</div>
+<img id="Card4-card-item1" src="images/pixabay002.jpg" width="1280" height="847" alt="https://pixabay.com/users/143740" title="https://pixabay.com/users/143740">
+<div id="Card4-card-item2">THE ULTIMATE DESTINATION FOR ALL HARDWARE NEEDS!</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card5" style="display:flex;width:100%;z-index:24;" class="card">
+<div id="Card5-card-body">
+<div id="Card5-card-item0">Software installation</div>
+<img id="Card5-card-item1" src="images/pexels005.jpeg" width="1880" height="1255" alt="https://www.pexels.com/@wdnet" title="https://www.pexels.com/@wdnet">
+<div id="Card5-card-item2">GET THE MOST SATISFYING SOLUTION TO YOUR SOFTWARE NEEDS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Card6" style="display:flex;width:100%;z-index:25;" class="card">
+<div id="Card6-card-body">
+<div id="Card6-card-item0">Teaching/Coaching</div>
+<img id="Card6-card-item1" src="images/pexels004.jpeg" width="1880" height="1253" alt="https://www.pexels.com/@jonathanborba" title="https://www.pexels.com/@jonathanborba">
+<div id="Card6-card-item2">YOU CAN RELY ON US WHEN IT COMES TO LEARNING TO DO IT YOURSELF!</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:26;">
+<h2 id="Heading7">About Us</h2>
+</div>
+<div id="wb_Text2">
+<div id="Text2-max-width">
+<span style="color:#F5F5F5;font-family:'Open Sans';font-size:17px;">Dani-Tech Solutions is a one-stop source of solutions to all technological problems.<br>Established in 2010, Dani-Tech Solutions has helped both individuals and small-scale enterprises and organizations to find a lasting solution to all their technological needs.<br>We also ..............</span>
+</div>
+</div>
+<div id="wb_ThemeableButton4" style="display:inline-block;width:163px;height:40px;z-index:28;">
+<a class="ui-button ui-corner-all" id="ThemeableButton4" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>READ MORE</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_about">
+<div id="about">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label2" style="display:block;width:100%;line-height:18px;z-index:29;">     </label>
+<div id="wb_Text3">
+<p style="font-size:20px;line-height:22.5px;"><span style="font-weight:bold;">USING LDPLAYER, YOU WILL GET:</span></p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:15px;line-height:16.5px;color:#DCDCDC;">-Full Android experience with well-developed Android 7.1 &amp; Android 9.</p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:15px;line-height:16.5px;color:#DCDCDC;">- Android gaming on PC with keyboard and mouse</p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:15px;line-height:16.5px;color:#DCDCDC;">- GPS location simulation</p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:15px;line-height:16.5px;color:#DCDCDC;">- File sharing between Your Windows and Android</p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:15px;line-height:16.5px;color:#DCDCDC;">- No fees to install and no worry about heavy advertisement</p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:15px;line-height:16.5px;color:#DCDCDC;">- Active updates on very nearly a monthly basis</p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:15px;line-height:16.5px;color:#DCDCDC;">- Multiple instances to play several games simultaneously</p>
+<p style="font-size:15px;line-height:16.5px;">&nbsp;</p>
+<p style="font-size:13px;line-height:16px;color:#DCDCDC;"><span style="font-size:15px;">- Best compatibility and rich function settings (CPU, RAM, Resolution,&nbsp;&nbsp; Device Model, Root Mode, Shortcuts, exclusive game settings, etc.)</span></p>
+</div>
+<label for="" id="Label1" style="display:block;width:100%;line-height:18px;z-index:31;">     </label>
+<a id="aboutButton" href="" style="display:inline-block;width:116px;height:36px;z-index:32;">Download</a>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_layoutGridGallery">
+<div id="layoutGridGallery">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading4" style="display:block;width:100%;z-index:33;">
+<h2 id="Heading4">Gallery</h2>
+</div>
+<div id="wb_PhotoGallery1" style="display:block;width:100%;z-index:34;">
+<div id="PhotoGallery1">
+<div class="thumbnails">
+<div class="thumbnail">
+<a href="images/unsplash-bakery-03.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-03.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-05.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-05.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-07.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-07.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-09.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-09.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-10.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-10.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-12.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-12.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-19.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-19.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-21.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-21.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="thumbnail">
+<a href="images/unsplash-bakery-22.jpeg" data-rel=""><img alt="" src="images/unsplash-bakery-22.jpeg" class="image" width="307" height="307"></a>
+</div>
+<div class="clearfix visible-col3"></div>
+</div>
+</div>
+</div>
+<div id="wb_ThemeableButton2" style="display:inline-block;width:163px;height:40px;z-index:35;">
+<a class="ui-button ui-corner-all" id="ThemeableButton2" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>FOLLOW US</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_YouTube5" style="display:block;width:100%;z-index:38;">
+<iframe id="YouTube5" src="https://www.youtube.com/embed/V4kFCWB9mH4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_YouTube2" style="display:block;width:100%;z-index:39;">
+<iframe id="YouTube2" src="https://www.youtube.com/embed/V4kFCWB9mH4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_YouTube3" style="display:block;width:100%;z-index:40;">
+<iframe id="YouTube3" src="https://www.youtube.com/embed/V4kFCWB9mH4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+<div class="col-4">
+<div class="col-4-padding">
+<div id="wb_YouTube4" style="display:block;width:100%;z-index:41;">
+<iframe id="YouTube4" src="https://www.youtube.com/embed/V4kFCWB9mH4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+<div class="col-5">
+<div class="col-5-padding">
+<div id="wb_YouTube1" style="display:block;width:100%;z-index:42;">
+<iframe id="YouTube1" src="https://www.youtube.com/embed/V4kFCWB9mH4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="col-6-padding">
+<div id="wb_YouTube6" style="display:block;width:100%;z-index:43;">
+<iframe id="YouTube6" src="https://www.youtube.com/embed/V4kFCWB9mH4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Divider1">
+<div id="Divider1-overlay"></div>
+<div id="Divider1">
+<div class="row">
+<div class="col-1">
+<hr id="DividerLine1" style="display:block;width: 100%;z-index:44;">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footerLayoutGrid">
+<div id="footerLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerText2">
+<span style="color:#4F4F4F;font-family:'Open Sans';font-size:13px;">Copyright © 2025 danitech.shop.&nbsp; All Rights Reserved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
