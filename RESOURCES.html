@@ -120,9 +120,11 @@ $(document).ready(function()
 <div id="wb_header">
 <div id="header">
 <div class="col-1">
-<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:8;">
-<a href="./index.html"><img src="images/LOG2.png" id="Image1" alt="" width="212" height="53"></a>
-</div>
+<a href="./index.html">
+<picture id="wb_Picture1" style="display:block;width: 100%;height:auto;z-index:8">
+<img src="images/Picture1.png" id="Picture1" alt="" width="212" height="60">
+</picture>
+</a>
 </div>
 <div class="col-2">
 <div id="wb_headerMenu" style="display:block;width:100%;z-index:9;">
@@ -143,9 +145,6 @@ $(document).ready(function()
 <li class="nav-item dropdown-hover dropdown">
 <a href="#" class="dropdown-toggle" data-bs-offset="0,1" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Learn<span class="arrow"></span></a>
 <ul class="dropdown-menu">
-<li class="nav-item dropdown-item dropdown-hover dropdown">
-<a href="#" class="dropdown-toggle" data-bs-offset="0,1" data-bs-placement="right-start" data-bs-toggle="dropdown">Office<span class="arrow-right"></span></a>
-<ul class="dropdown-menu">
 <li class="nav-item dropdown-item">
 <a href="./word.html" class="nav-link">Word</a>
 </li>
@@ -154,8 +153,6 @@ $(document).ready(function()
 </li>
 <li class="nav-item dropdown-item">
 <a href="./powerpoint.html" class="nav-link">Power Point</a>
-</li>
-</ul>
 </li>
 </ul>
 </li>
