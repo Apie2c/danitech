@@ -9,7 +9,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
 <link href="css/Dani-Tech_Sol.css" rel="stylesheet">
-<link href="css/RESOURCES.css" rel="stylesheet">
+<link href="css/Office-activator.css" rel="stylesheet">
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -74,16 +74,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#welcome']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
-   });
-   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-   if (iOS)
-   {
-      $('#wb_welcome').css('background-attachment', 'scroll');
-   }
 });
 </script>
 </head>
@@ -199,86 +189,48 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_welcome">
-<div id="welcome-overlay"></div>
-<div id="welcome">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading1" style="display:block;width:100%;z-index:17;">
-<h1 id="Heading1">SOLUTION TO ALL TECH PROBLEMS</h1>
-</div>
-<div id="wb_JavaScript1" style="display:block;width:100%;z-index:18;">
-<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
-<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
-</div>
-<script>
-var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
-var lines = data.split('^');
-var reverse = false;
-var index = 0;
-var text = '';
-var typeWriterElement = document.getElementById("typewriter-text");
-function typeWriterDeluxe() 
-{
-   var i = index % lines.length;
-   var line = lines[i];
-   if (reverse) 
-   {
-      text = line.substring(0, text.length - 1);
-   } 
-   else 
-   {
-      text = line.substring(0, text.length + 1);
-   }
-   typeWriterElement.innerHTML = text;
-   var timeout = 250 - Math.random() * (250/2);
-   if (reverse) 
-   { 
-      timeout /= 2; 
-   }
-   if (!reverse && text === line) 
-   {
-      timeout = 5000;
-      reverse = true;
-   } 
-   else 
-   if (reverse && text === '') 
-   {
-      reverse = false;
-      index++;
-      timeout = 500;
-   }
-   setTimeout(typeWriterDeluxe, timeout);
-}
-typeWriterDeluxe();
-</script>
-</div>
-<div id="wb_Heading2" style="display:block;width:100%;z-index:19;">
-<h2 id="Heading2"></h2>
-</div>
-<div id="wb_Heading5" style="display:block;width:100%;z-index:20;">
-<h2 id="Heading5"></h2>
-</div>
-<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:21;">
-<a class="ui-button ui-corner-all" id="ThemeableButton3" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading6" style="display:block;width:100%;z-index:22;">
-<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
+<div id="wb_Heading6" style="display:block;width:100%;z-index:17;">
+<h1 id="Heading6"></h1>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/TM-1-4-e1722278599822.png" id="Image2" alt="" width="616" height="440">
+</div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:20;">
+<h1 id="Heading8"></h1>
+</div>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Bookman Old Style';font-size:19px;">Microsoft Office 2019 is a powerful suite of tools that helps users across the globe manage their tasks, create documents, and collaborate effectively. While it's packed with useful features, activating Office 2019 is a crucial step to unlocking its full potential. In this blog post, we'll explore what an Office 19 Activator is, how it works, and the key considerations to keep in mind when using it.<br><br>What is an Office 19 Activator?<br><br>An Office 19 Activator is a software tool designed to bypass Microsoft's official activation process. It enables users to unlock the full features of Office 2019 without purchasing a license. These activators often work by emulating a genuine activation server or modifying the software's registry to fool Office into thinking it's activated.<br><br>How Does It Work?<br><br>Office 19 Activators typically function in one of two ways:<br><br>KMS Activation: The KMS (Key Management Service) method involves setting up a virtual KMS server that Office 2019 communicates with. The activator pretends to be an official KMS server, thereby activating Office.<br><br>License Key Generators: Some activators generate fake license keys that Office 2019 accepts as genuine. This method involves replacing the trial or existing license with a new, illegitimate key.<br><br>Why Use an Office 19 Activator?<br><br>While the idea of free access to Office 2019 might sound appealing, there are several critical reasons to reconsider:<br><br>Legal and Ethical Issues: Using an activator to bypass Microsoft's licensing requirements is illegal and violates the company's terms of service. This could result in legal action and hefty fines.<br><br>Security Risks: Many activators are distributed as cracked software, which often contains malware, viruses, or spyware. These can compromise your system's security, leading to data breaches or loss.<br><br>Lack of Support and Updates: Activated copies of Office 2019 using unauthorized methods won't receive official updates or support from Microsoft. This means missing out on critical security patches and new features.<br><br>Alternatives to Using an Activator<br><br>If the cost of Office 2019 is a concern, consider these alternatives:<br><br>Microsoft 365: This subscription-based service offers access to the latest Office applications, along with cloud storage and other features. It's more affordable in the short term and provides regular updates.<br><br>Free Office Suites: There are several free alternatives to Microsoft Office, such as LibreOffice or Google Workspace. These tools offer similar functionality and are completely legal to use.<br><br>Educational Discounts: If you're a student or educator, check for educational discounts or free access through your institution.<br><br>Disclaimer<br><br>The Office Activator provided on this website is intended for educational and informational purposes only. By downloading and using the activator, you acknowledge and agree to the following:<br><br>Legal Compliance: The use of activators to bypass software licensing restrictions, such as those set by Microsoft for Office 2019, may be illegal and violate the software's End User License Agreement (EULA). Unauthorized use of activators may result in legal consequences, including fines and other penalties.<br><br>Security Risks: Downloading and using activators from any source, including this website, may pose significant security risks. Activators can contain malware, viruses, or spyware, potentially leading to data breaches, system instability, or other harmful effects. You assume all responsibility for any potential security risks associated with using the activator.<br><br>Lack of Support and Updates: Using an activator may prevent your software from receiving official updates and support from the software manufacturer. This can leave your system vulnerable to security threats and may limit access to new features and improvements.<br><br>No Warranty or Liability: This website and its owners make no warranties, express or implied, regarding the performance, reliability, or legality of the activator. By downloading and using the activator, you agree to indemnify and hold harmless this website and its owners from any and all claims, damages, losses, or expenses arising from the use of the activator.<br><br>Educational and Ethical Considerations: The activator is provided solely for the purpose of educating users about the potential risks and legal implications of using unauthorized software. We do not condone or encourage the illegal use of software. We strongly recommend using legitimate methods to obtain and activate software licenses.<br><br>By downloading and using the Office Activator from this website, you confirm that you have read, understood, and agreed to this disclaimer. If you do not agree with any part of this disclaimer, you should not download or use the activator. Find your Office product key - Microsoft Support<br><br>Conclusion<br><br>While Office 19 Activators might seem like a quick and easy solution, they come with significant risks and legal implications. It's important to consider the consequences and explore legitimate alternatives that offer security, support, and peace of mind. Investing in a genuine Office license not only supports the developers but also ensures a seamless and secure user experience. Check other resources <br><br>How to use<br><br>Extract the file<br><br>Connect your computer to internet<br><br>Run activator as Admin and wait<br><br>Press &quot;N&quot; after executing</span><span style="color:#000000;font-family:'Open Sans';font-size:19px;"><br><br><br></span>
+</div>
+<a id="Button1" href="HTTPs://danitech.shop/wp-content/uploads/2024/07/OFActivate.rar" style="display:inline-block;width:85px;height:30px;z-index:23;">Download</a>
+</div>
+<div class="col-2">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:24;">
+<a href="https://www.ldplayer.net/?n=39282916#utm_source=aff&utm_medium=aff&utm_campaign=aff39282916"><img src="images/300x600.jpg" id="Image3" alt="" width="293" height="586"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
@@ -291,16 +243,6 @@ typeWriterDeluxe();
 <div class="col-3">
 <div class="col-3-padding">
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Divider1">
-<div id="Divider1-overlay"></div>
-<div id="Divider1">
-<div class="row">
-<div class="col-1">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:23;">
 </div>
 </div>
 </div>

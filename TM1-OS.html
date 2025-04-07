@@ -9,7 +9,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
 <link href="css/Dani-Tech_Sol.css" rel="stylesheet">
-<link href="css/RESOURCES.css" rel="stylesheet">
+<link href="css/TM1-OS.css" rel="stylesheet">
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -74,16 +74,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#welcome']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
-   });
-   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-   if (iOS)
-   {
-      $('#wb_welcome').css('background-attachment', 'scroll');
-   }
 });
 </script>
 </head>
@@ -199,86 +189,48 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_welcome">
-<div id="welcome-overlay"></div>
-<div id="welcome">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading1" style="display:block;width:100%;z-index:17;">
-<h1 id="Heading1">SOLUTION TO ALL TECH PROBLEMS</h1>
-</div>
-<div id="wb_JavaScript1" style="display:block;width:100%;z-index:18;">
-<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
-<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
-</div>
-<script>
-var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
-var lines = data.split('^');
-var reverse = false;
-var index = 0;
-var text = '';
-var typeWriterElement = document.getElementById("typewriter-text");
-function typeWriterDeluxe() 
-{
-   var i = index % lines.length;
-   var line = lines[i];
-   if (reverse) 
-   {
-      text = line.substring(0, text.length - 1);
-   } 
-   else 
-   {
-      text = line.substring(0, text.length + 1);
-   }
-   typeWriterElement.innerHTML = text;
-   var timeout = 250 - Math.random() * (250/2);
-   if (reverse) 
-   { 
-      timeout /= 2; 
-   }
-   if (!reverse && text === line) 
-   {
-      timeout = 5000;
-      reverse = true;
-   } 
-   else 
-   if (reverse && text === '') 
-   {
-      reverse = false;
-      index++;
-      timeout = 500;
-   }
-   setTimeout(typeWriterDeluxe, timeout);
-}
-typeWriterDeluxe();
-</script>
-</div>
-<div id="wb_Heading2" style="display:block;width:100%;z-index:19;">
-<h2 id="Heading2"></h2>
-</div>
-<div id="wb_Heading5" style="display:block;width:100%;z-index:20;">
-<h2 id="Heading5"></h2>
-</div>
-<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:21;">
-<a class="ui-button ui-corner-all" id="ThemeableButton3" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading6" style="display:block;width:100%;z-index:22;">
-<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
+<div id="wb_Heading6" style="display:block;width:100%;z-index:17;">
+<h1 id="Heading6"></h1>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/2022_02_04_08_57_IMG_7154-scaled.png" id="Image2" alt="" width="616" height="442">
+</div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:20;">
+<h1 id="Heading8"></h1>
+</div>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Bookman Old Style';font-size:19px;">The TM1 Operating System is a specialized OS designed to enhance the educational experience for both teachers and students. Tailored specifically for educational environments, TM1 offers a range of features that support teaching, learning, and classroom management.<br><br>Key features of the TM1 Operating System include:<br><br>User-Friendly Interface: TM1 provides an intuitive and easy-to-navigate interface, making it accessible for all ages and technical skill levels.<br><br>Educational Tools and Resources: The OS comes pre-installed with various educational software, applications, and digital resources. These tools support subjects across the curriculum, helping teachers deliver engaging lessons and deepen students' understanding.<br><br>Classroom Management Features: TM1 includes tools for classroom management, such as attendance tracking, assignment distribution, and progress monitoring. These features help teachers efficiently manage their classes and stay organized.<br><br>Secure Environment: Security is a priority with TM1. The TM1 OS includes robust features to protect sensitive data, maintain student privacy, and provide a safe digital learning environment.<br><br>Connectivity and Collaboration: TM1 supports connectivity options that facilitate collaboration among students and between teachers and students. This includes tools for sharing documents, communicating in real-time, and working on group projects.<br><br>Customizable and Flexible: TM1 is adaptable to the needs of different educational levels and institutions. It allows for customization to fit specific teaching methodologies, curricula, and institutional requirements.<br><br>Overall, the Teachers' Mate 1 Operating System is designed to create a comprehensive, secure, and interactive learning environment, leveraging technology to enhance education in modern classrooms.<br><br>You can download the TM1 Operating System from the link provided below.<br><br>Download</span><span style="color:#000000;font-family:'Open Sans';font-size:19px;"><br><br></span>
+</div>
+<a id="Button1" href="https://drive.usercontent.google.com/download?id=1OfGO0w7liFaVUhE16H11agIbQ7AflfCn&export=download&authuser=0" style="display:inline-block;width:85px;height:30px;z-index:23;">Download</a>
+</div>
+<div class="col-2">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:24;">
+<a href="https://www.ldplayer.net/?n=39282916#utm_source=aff&utm_medium=aff&utm_campaign=aff39282916"><img src="images/300x600.jpg" id="Image3" alt="" width="293" height="586"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
@@ -291,16 +243,6 @@ typeWriterDeluxe();
 <div class="col-3">
 <div class="col-3-padding">
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Divider1">
-<div id="Divider1-overlay"></div>
-<div id="Divider1">
-<div class="row">
-<div class="col-1">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:23;">
 </div>
 </div>
 </div>

@@ -9,7 +9,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
 <link href="css/Dani-Tech_Sol.css" rel="stylesheet">
-<link href="css/RESOURCES.css" rel="stylesheet">
+<link href="css/Create-bootable-drive.css" rel="stylesheet">
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -74,16 +74,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#welcome']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
-   });
-   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-   if (iOS)
-   {
-      $('#wb_welcome').css('background-attachment', 'scroll');
-   }
 });
 </script>
 </head>
@@ -199,86 +189,45 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_welcome">
-<div id="welcome-overlay"></div>
-<div id="welcome">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading1" style="display:block;width:100%;z-index:17;">
-<h1 id="Heading1">SOLUTION TO ALL TECH PROBLEMS</h1>
-</div>
-<div id="wb_JavaScript1" style="display:block;width:100%;z-index:18;">
-<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
-<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
-</div>
-<script>
-var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
-var lines = data.split('^');
-var reverse = false;
-var index = 0;
-var text = '';
-var typeWriterElement = document.getElementById("typewriter-text");
-function typeWriterDeluxe() 
-{
-   var i = index % lines.length;
-   var line = lines[i];
-   if (reverse) 
-   {
-      text = line.substring(0, text.length - 1);
-   } 
-   else 
-   {
-      text = line.substring(0, text.length + 1);
-   }
-   typeWriterElement.innerHTML = text;
-   var timeout = 250 - Math.random() * (250/2);
-   if (reverse) 
-   { 
-      timeout /= 2; 
-   }
-   if (!reverse && text === line) 
-   {
-      timeout = 5000;
-      reverse = true;
-   } 
-   else 
-   if (reverse && text === '') 
-   {
-      reverse = false;
-      index++;
-      timeout = 500;
-   }
-   setTimeout(typeWriterDeluxe, timeout);
-}
-typeWriterDeluxe();
-</script>
-</div>
-<div id="wb_Heading2" style="display:block;width:100%;z-index:19;">
-<h2 id="Heading2"></h2>
-</div>
-<div id="wb_Heading5" style="display:block;width:100%;z-index:20;">
-<h2 id="Heading5"></h2>
-</div>
-<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:21;">
-<a class="ui-button ui-corner-all" id="ThemeableButton3" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading6" style="display:block;width:100%;z-index:22;">
-<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
+<div id="wb_Heading6" style="display:block;width:100%;z-index:17;">
+<h1 id="Heading6"></h1>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/Picture.png" id="Image2" alt="" width="616" height="426">
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:19;">
+<h1 id="Heading8"></h1>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Bookman Old Style';font-size:19px;"><br><br><br><br>A bootable Pen drive is an essential tool for installing operating systems, troubleshooting PCs, or carrying live systems. Creating one using Windows's Command Prompt (CMD) is straightforward and doesn’t require third-party software. Here’s a step-by-step guide to help you through the process.<br><br>Prerequisites<br><br>A USB pen drive with at least 8GB of storage (depending on the OS size).<br><br>A computer running Windows.<br><br>Steps to Create a Bootable Pen Drive<br><br>Insert the USB Drive: Plug your USB drive into your computer’s USB port. Make sure to back up any data on the drive, as the process will erase all existing data.<br><br>Open Command Prompt as Administrator<br><br>Press Windows + S and type cmd.<br><br>Right-click on the Command Prompt and select Run as administrator.<br><br>Start the Disk Partition Tool: In the Command Prompt, type “diskpart” and Press Enter. This will open the Disk Partition tool.<br><br>Type the following commands and press the Enter key after typing each line. Also, wait patiently for the command to execute before typing the next command.<br><br>list disk<br><br>Press Enter. Identify your USB drive from the list by its size.<br><br>select disk X<br><br>Replace X with the disk number of your USB drive and press Enter.<br><br>clean<br><br>Press Enter. This will erase all data and partitions on the drive.<br><br>create partition primary<br><br>Press Enter.<br><br>select partition 1<br><br>Press Enter.<br><br>active<br><br>Press Enter.<br><br>format fs=ntfs quick<br><br>Press Enter and wait for the format to complete.<br><br>assign<br><br>Press Enter. Note the assigned drive letter (e.g., F:).<br><br>Exit<br><br>Press Enter.<br><br>Your Bootable USB is Ready. You can now copy any operating system installation files to this USB drive and your USB drive is now bootable. Safely eject it and use it to boot your system.<br><br>you can watch a video tutorial below<br><br>Conclusion<br><br>Creating a bootable pen drive using Command Prompt is a reliable method that doesn’t require additional software. By mastering this skill, you can quickly prep<br><br><br></span>
+</div>
+<div id="wb_YouTube1" style="display:block;width:100%;z-index:21;">
+<iframe id="YouTube1" src="https://www.youtube.com/embed/xEcmC2--fIw?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:22;">
+<a href="https://www.ldplayer.net/?n=39282916#utm_source=aff&utm_medium=aff&utm_campaign=aff39282916"><img src="images/300x600.jpg" id="Image3" alt="" width="293" height="586"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
@@ -291,16 +240,6 @@ typeWriterDeluxe();
 <div class="col-3">
 <div class="col-3-padding">
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Divider1">
-<div id="Divider1-overlay"></div>
-<div id="Divider1">
-<div class="row">
-<div class="col-1">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:23;">
 </div>
 </div>
 </div>

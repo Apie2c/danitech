@@ -9,7 +9,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
 <link href="css/Dani-Tech_Sol.css" rel="stylesheet">
-<link href="css/RESOURCES.css" rel="stylesheet">
+<link href="css/Drive-to-Direct-download.css" rel="stylesheet">
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -74,16 +74,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#welcome']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
-   });
-   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-   if (iOS)
-   {
-      $('#wb_welcome').css('background-attachment', 'scroll');
-   }
 });
 </script>
 </head>
@@ -199,86 +189,60 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_welcome">
-<div id="welcome-overlay"></div>
-<div id="welcome">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading1" style="display:block;width:100%;z-index:17;">
-<h1 id="Heading1">SOLUTION TO ALL TECH PROBLEMS</h1>
-</div>
-<div id="wb_JavaScript1" style="display:block;width:100%;z-index:18;">
-<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
-<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
-</div>
-<script>
-var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
-var lines = data.split('^');
-var reverse = false;
-var index = 0;
-var text = '';
-var typeWriterElement = document.getElementById("typewriter-text");
-function typeWriterDeluxe() 
-{
-   var i = index % lines.length;
-   var line = lines[i];
-   if (reverse) 
-   {
-      text = line.substring(0, text.length - 1);
-   } 
-   else 
-   {
-      text = line.substring(0, text.length + 1);
-   }
-   typeWriterElement.innerHTML = text;
-   var timeout = 250 - Math.random() * (250/2);
-   if (reverse) 
-   { 
-      timeout /= 2; 
-   }
-   if (!reverse && text === line) 
-   {
-      timeout = 5000;
-      reverse = true;
-   } 
-   else 
-   if (reverse && text === '') 
-   {
-      reverse = false;
-      index++;
-      timeout = 500;
-   }
-   setTimeout(typeWriterDeluxe, timeout);
-}
-typeWriterDeluxe();
-</script>
-</div>
-<div id="wb_Heading2" style="display:block;width:100%;z-index:19;">
-<h2 id="Heading2"></h2>
-</div>
-<div id="wb_Heading5" style="display:block;width:100%;z-index:20;">
-<h2 id="Heading5"></h2>
-</div>
-<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:21;">
-<a class="ui-button ui-corner-all" id="ThemeableButton3" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading6" style="display:block;width:100%;z-index:22;">
-<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
+<div id="wb_Heading6" style="display:block;width:100%;z-index:17;">
+<h1 id="Heading6"></h1>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/image.png" id="Image2" alt="" width="616" height="442">
+</div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:20;">
+<h1 id="Heading8"></h1>
+</div>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Bookman Old Style';font-size:19px;">Effortlessly Share Files with a Google Drive to Direct Download Link Generator.<br><br>Drive to Direct Download Link Generator comes in handy in today's digital age, where sharing files quickly and efficiently is crucial for productivity and collaboration. Google Drive is one of the most popular platforms for file storage and sharing, thanks to its ease of use and integration with other Google services. However, sharing files via Google Drive often involves navigating through multiple steps, which can be cumbersome, especially if you frequently share files with others. This is where a Google <br><br>What is a Google Drive Direct Download Link?<br><br>A Google Drive Direct Download Link allows recipients to download files directly from Google Drive without having to visit the Drive interface or click through several prompts. This streamlined process is particularly useful when you want to share files quickly and efficiently, or when sharing with people who may not be familiar with navigating Google Drive.<br><br>Why Use a Direct Download Link?<br><br>Convenience: Direct download links eliminate the need for recipients to navigate the Google Drive interface. A single click starts the download, making the process quick and hassle-free.<br><br>Professionalism: Sending a direct download link provides a seamless experience for recipients, which can be particularly important in professional settings.<br><br>Time-Saving: For frequent file sharers, generating direct download links saves time by reducing the steps involved in file sharing.<br><br>How to Create a Google Drive Direct Download Link<br><br>Creating a direct download link involves a few simple steps. Here's how you can do it:<br><br><strong>Upload Your File to Google Drive:<br></strong><br>If your file is not already on Google Drive, upload it by dragging it into your Drive or clicking the &quot;New&quot; button and selecting &quot;File upload.&quot;<br><br><strong>Get the Shareable Link:<br></strong><br>Right-click on the uploaded file and select &quot;Get link.&quot;<br><br>In the sharing settings, make sure the link is set to &quot;Anyone with the link&quot; can view or download the file. Copy the shareable link. <br><br>Past the link in a URL bar and copy the file id which is normally between d/ and /view<br><br>Modify the Link for Direct Download:<br><br><strong>Open the link generator<br></strong><br>Paste the file ID in the drive to direct download link generator<br><br>Click on Generate<br><br>Copy the direct download link generated and share it with your clients.<br><br>You can watch the video on how to use this tool<br><br><strong>Using a Direct Download Link Generator<br></strong><br>While you can manually create direct download links using the method above, a Direct Download Link Generator can simplify the process further. These tools automatically convert your standard Google Drive link into a direct download link with just a few clicks.<br><br>Advantages of Using a Link Generator:<br><br>Speed: Quickly generate multiple links without manual editing.<br><br>Accuracy: Ensure the links are correctly formatted to avoid errors.<br><br>User-Friendly: Easy-to-use interfaces make it accessible for everyone, regardless of technical skill level.<br><br>Conclusion<br><br>A Google Drive Direct Download Link Generator is a valuable tool for anyone who frequently shares files. It simplifies the sharing process, provides a more professional experience for recipients, and saves time. Whether you're sharing documents, images, videos, or any other file type, direct download links make the process seamless and efficient.<br><br>Try using a direct download link generator today and streamline your file-sharing process on Google Drive. Your colleagues, clients, and friends will appreciate the simplicity and ease of access!</span><span style="color:#000000;font-family:'Open Sans';font-size:19px;"><br><br></span>
+</div>
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:23;">
+<img src="images/Screenshot-2024-07-27-213013.png" id="Image1" alt="" width="616" height="320">
+</div>
+<div id="wb_Text1">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Image4" style="display:block;width:100%;height:auto;z-index:25;">
+<img src="images/Screenshot-2024-07-27-213306.png" id="Image4" alt="" width="616" height="309">
+</div>
+<div id="wb_Text2">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<a id="Button1" href="https://drive.google.com/uc?export=download&id=1-1D1F2LKTSONcCyB8xAEAwZpXQK6F5Gz" style="display:inline-block;width:85px;height:30px;z-index:27;">Download</a>
+</div>
+<div class="col-2">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:28;">
+<a href="https://www.ldplayer.net/?n=39282916#utm_source=aff&utm_medium=aff&utm_campaign=aff39282916"><img src="images/300x600.jpg" id="Image3" alt="" width="293" height="586"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
@@ -291,16 +255,6 @@ typeWriterDeluxe();
 <div class="col-3">
 <div class="col-3-padding">
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Divider1">
-<div id="Divider1-overlay"></div>
-<div id="Divider1">
-<div class="row">
-<div class="col-1">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:23;">
 </div>
 </div>
 </div>

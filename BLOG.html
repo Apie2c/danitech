@@ -9,7 +9,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
 <link href="css/Dani-Tech_Sol.css" rel="stylesheet">
-<link href="css/microsoft_suite.css" rel="stylesheet">
+<link href="css/BLOG.css" rel="stylesheet">
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -74,16 +74,55 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#welcome']").click(function(event)
+   $("a[href*='#booksLayoutGrid1']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
+      $('html, body').stop().animate({ scrollTop: $('#wb_booksLayoutGrid1').offset().top }, 600, 'easeOutExpo');
    });
-   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-   if (iOS)
+   $("a[href*='#booksLayoutGrid2']").click(function(event)
    {
-      $('#wb_welcome').css('background-attachment', 'scroll');
-   }
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_booksLayoutGrid2').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutExpo');
+   });
+   $('body').on('click','[data-ecommerce-platform="paypal"]', function(e)
+   {
+      e.preventDefault();
+      var url = "https://www.paypal.com/cgi-bin/webscr?add=1&cmd=";
+      url += $(this).attr('data-cmd');
+      url += "&business=";
+      url += encodeURIComponent($(this).attr('data-business'));
+      url += "&item_name=";
+      url += encodeURIComponent($(this).attr('data-item-name'));
+      url += "&item_number=";
+      url += encodeURIComponent($(this).attr('data-item-number'));
+      url += "&amount=";
+      url += encodeURIComponent($(this).attr('data-amount'));
+      url += "&currency_code=";
+      url += encodeURIComponent($(this).attr('data-currency-code'));
+      if ($(this).attr('data-quantity'))
+      {
+         url += "&quantity=";
+         url += encodeURIComponent($(this).attr('data-quantity'));
+      }
+      url += "&shipping=";
+      url += encodeURIComponent($(this).attr('data-shipping'));
+      url += "&shipping2=";
+      url += encodeURIComponent($(this).attr('data-shipping2'));
+      url += "&handling=";
+      url += encodeURIComponent($(this).attr('data-handling'));
+      url += "&no_shipping=";
+      url += encodeURIComponent($(this).attr('data-no_shipping'));
+      url += "&return=";
+      url += encodeURIComponent($(this).attr('data-success-url'));
+      url += "&cancel_return=";
+      url += encodeURIComponent($(this).attr('data-cancel-url'));
+      window.open(url, '_click');
+   });
 });
 </script>
 </head>
@@ -199,118 +238,79 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_welcome">
-<div id="welcome-overlay"></div>
-<div id="welcome">
+<div id="wb_booksLayoutGrid1">
+<div id="booksLayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading1" style="display:block;width:100%;z-index:17;">
-<h1 id="Heading1">LEARNING MADE EASY</h1>
+<div id="wb_booksCard1" style="display:flex;width:100%;z-index:17;" class="card">
+<div id="booksCard1-card-body">
+<img id="booksCard1-card-item0" src="images/Picture13-1024x637.png" width="1024" height="637" alt="Bestseller #1" title="Bestseller #1">
+<div id="booksCard1-card-item1">Using Excel for Grading and Ranking</div>
+<hr id="booksCard1-card-item2">
+<div id="booksCard1-card-item3">Learn how to compute marks in excel. Grading and Ranking</div>
 </div>
-<div id="wb_JavaScript1" style="display:block;width:100%;z-index:18;">
-<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
-<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
-</div>
-<script>
-var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
-var lines = data.split('^');
-var reverse = false;
-var index = 0;
-var text = '';
-var typeWriterElement = document.getElementById("typewriter-text");
-function typeWriterDeluxe() 
-{
-   var i = index % lines.length;
-   var line = lines[i];
-   if (reverse) 
-   {
-      text = line.substring(0, text.length - 1);
-   } 
-   else 
-   {
-      text = line.substring(0, text.length + 1);
-   }
-   typeWriterElement.innerHTML = text;
-   var timeout = 250 - Math.random() * (250/2);
-   if (reverse) 
-   { 
-      timeout /= 2; 
-   }
-   if (!reverse && text === line) 
-   {
-      timeout = 5000;
-      reverse = true;
-   } 
-   else 
-   if (reverse && text === '') 
-   {
-      reverse = false;
-      index++;
-      timeout = 500;
-   }
-   setTimeout(typeWriterDeluxe, timeout);
-}
-typeWriterDeluxe();
-</script>
-</div>
-<div id="wb_Heading2" style="display:block;width:100%;z-index:19;">
-<h2 id="Heading2"></h2>
-</div>
-<div id="wb_Heading5" style="display:block;width:100%;z-index:20;">
-<h2 id="Heading5"></h2>
-</div>
-<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:21;">
-<a class="ui-button ui-corner-all" id="ThemeableButton3" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading6" style="display:block;width:100%;z-index:22;">
-<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_Card4" style="display:flex;width:100%;z-index:23;" class="card">
-<div id="Card4-card-body">
-<div id="Card4-card-item0">Microsoft Word</div>
-<a href="./word.html"><img id="Card4-card-item1" src="images/pixabay004.png" width="1280" height="1173" alt="All you need to learn and know about MS Word" title=""></a>
-<div id="Card4-card-item2">ALL YOU NEED TO LEARN AND KNOW ABOUT MICROSOFT OFFICE WORD.</div>
-</div>
-</div>
+<div id="booksCard1-card-item4"><a href="./excel-for-teachers.html" class="stretched-link">Read more</a></div>
 </div>
 </div>
 <div class="col-2">
-<div class="col-2-padding">
-<div id="wb_Card5" style="display:flex;width:100%;z-index:24;" class="card">
-<div id="Card5-card-body">
-<div id="Card5-card-item0">Microsoft Office Excel</div>
-<a href="./excel.html"><img id="Card5-card-item1" src="images/pixabay005.png" width="1280" height="1174" alt="" title=""></a>
-<div id="Card5-card-item2">LEARN MICROSOFT EXCEL AT YOUR OWN PACE</div>
+<div id="wb_Card2" style="display:flex;width:100%;z-index:18;" class="card">
+<div id="Card2-card-body">
+<img id="Card2-card-item0" src="images/TM-1-4-e1722278599822.png" width="500" height="357" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card2-card-item1">Office Activator for Office 19 plus</div>
+<hr id="Card2-card-item2">
+<div id="Card2-card-item3">Download office 19 activator form the link in the aticle below</div>
 </div>
-</div>
+<div id="Card2-card-item4"><a href="./Office-activator.html" class="stretched-link">Read more</a></div>
 </div>
 </div>
 <div class="col-3">
-<div class="col-3-padding">
-<div id="wb_Card6" style="display:flex;width:100%;z-index:25;" class="card">
-<div id="Card6-card-body">
-<div id="Card6-card-item0">Microsoft Powerpoint</div>
-<a href="./powerpoint.html"><img id="Card6-card-item1" src="images/pixabay006.png" width="1280" height="1171" alt="" title=""></a>
-<div id="Card6-card-item2">PRESENTATION/POWERPONT MADE EASEY</div>
+<div id="wb_Card3" style="display:flex;width:100%;z-index:19;" class="card">
+<div id="Card3-card-body">
+<img id="Card3-card-item0" src="images/Picture1.jpg" width="624" height="392" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card3-card-item1">Download Microsoft Office suite 19 from the link</div>
+<hr id="Card3-card-item2">
+<div id="Card3-card-item3">Get the pro version of Microsoft Office Suite when you open the aticle</div>
+</div>
+<div id="Card3-card-item4"><a href="./Office-Suite.html" class="stretched-link">Read more</a></div>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div id="wb_booksLayoutGrid2">
+<div id="booksLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card4" style="display:flex;width:100%;z-index:20;" class="card">
+<div id="Card4-card-body">
+<img id="Card4-card-item0" src="images/Picture3.png" width="2142" height="1482" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card4-card-item1">Create a bootable Pendrive in 2 minutes</div>
+<hr id="Card4-card-item2">
+<div id="Card4-card-item3">Creating bootable usb is a very simple procedure. Watch how you can create one for yourself.</div>
+</div>
+<div id="Card4-card-item4"><a href="./Create-bootable-drive.html" class="stretched-link">Read more</a></div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:21;" class="card">
+<div id="Card1-card-body">
+<img id="Card1-card-item0" src="images/image.png" width="539" height="387" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card1-card-item1">Hide Google drive from your audience </div>
+<hr id="Card1-card-item2">
+<div id="Card1-card-item3">Do you want your audience to download a file directly from Drive without going to drive?</div>
+</div>
+<div id="Card1-card-item4"><a href="./Drive-to-Direct-download.html" class="stretched-link">Read more</a></div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card5" style="display:flex;width:100%;z-index:22;" class="card">
+<div id="Card5-card-body">
+<img id="Card5-card-item0" src="images/2022_02_04_08_57_IMG_7154-scaled.jpg" width="1600" height="1148" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card5-card-item1">The complete TM1 Operating System</div>
+<hr id="Card5-card-item2">
+<div id="Card5-card-item3">This is the original Operating System for Teachers Mate 1 (TM 1) Laptop find the download button in the aticle</div>
+</div>
+<div id="Card5-card-item4"><a href="./TM1-OS.html" class="stretched-link">Read more</a></div>
 </div>
 </div>
 </div>
@@ -320,33 +320,40 @@ typeWriterDeluxe();
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div class="col-1-padding">
-<div id="wb_Card1" style="display:flex;width:100%;z-index:26;" class="card">
-<div id="Card1-card-body">
-<div id="Card1-card-item0">Microsoft Teams</div>
-<a href="./word.html"><img id="Card1-card-item1" src="https://images.unsplash.com/photo-1633410189542-36d96e3762b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2ODk0MXwwfDF8c2VhcmNofDh8fE1JQ1JPU09GVCUyMFRFQU1TfGVufDB8fHx8MTY4NDE1OTU5OXww&ixlib=rb-4.0.3&q=80&w=1080" width="1080" height="1080" alt="" title=""></a>
-<div id="Card1-card-item2">ALL YOU NEED TO LEARN AND KNOW ABOUT MICROSOFT TEAMS</div>
+<div id="wb_booksCard7" style="display:flex;width:100%;z-index:23;" class="card">
+<div id="booksCard7-card-body">
+<img id="booksCard7-card-item0" src="images/BookMockup155.png" width="600" height="400" alt="Bestseller #7" title="Bestseller #7">
+<div id="booksCard7-card-item1">BESTSELLER #7</div>
+<div id="booksCard7-card-item2">$29.99</div>
+<hr id="booksCard7-card-item3">
+<div id="booksCard7-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 </div>
-</div>
+<div id="booksCard7-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #7" data-item-number="SKU007" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
 </div>
 </div>
 <div class="col-2">
-<div class="col-2-padding">
+<div id="wb_booksCard8" style="display:flex;width:100%;z-index:24;" class="card">
+<div id="booksCard8-card-body">
+<img id="booksCard8-card-item0" src="images/BookMockup193.png" width="600" height="400" alt="Bestseller #8" title="Bestseller #8">
+<div id="booksCard8-card-item1">BESTSELLER #8</div>
+<div id="booksCard8-card-item2">$29.99</div>
+<hr id="booksCard8-card-item3">
+<div id="booksCard8-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+</div>
+<div id="booksCard8-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #8" data-item-number="SKU008" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
 </div>
 </div>
 <div class="col-3">
-<div class="col-3-padding">
+<div id="wb_booksCard9" style="display:flex;width:100%;z-index:25;" class="card">
+<div id="booksCard9-card-body">
+<img id="booksCard9-card-item0" src="images/BookMockup205.png" width="600" height="400" alt="Bestseller #9" title="Bestseller #9">
+<div id="booksCard9-card-item1">BESTSELLER #9</div>
+<div id="booksCard9-card-item2">$29.99</div>
+<hr id="booksCard9-card-item3">
+<div id="booksCard9-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 </div>
+<div id="booksCard9-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #9" data-item-number="SKU009" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
 </div>
-</div>
-</div>
-</div>
-<div id="wb_Divider1">
-<div id="Divider1-overlay"></div>
-<div id="Divider1">
-<div class="row">
-<div class="col-1">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:27;">
 </div>
 </div>
 </div>

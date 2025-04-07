@@ -1273,10 +1273,7 @@ body
 #wb_footerLayoutGrid
 {
    clear: both;
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   z-index: 7777;
+   position: relative;
    table-layout: fixed;
    display: table;
    text-align: center;
@@ -3217,10 +3214,7 @@ body
 #wb_footerLayoutGrid
 {
    clear: both;
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   z-index: 7777;
+   position: relative;
    table-layout: fixed;
    display: table;
    text-align: center;

@@ -9,7 +9,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
 <link href="css/Dani-Tech_Sol.css" rel="stylesheet">
-<link href="css/RESOURCES.css" rel="stylesheet">
+<link href="css/Office-Suite.css" rel="stylesheet">
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -74,16 +74,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#welcome']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-78 }, 600, 'easeOutQuart');
-   });
-   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-   if (iOS)
-   {
-      $('#wb_welcome').css('background-attachment', 'scroll');
-   }
 });
 </script>
 </head>
@@ -199,86 +189,48 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_welcome">
-<div id="welcome-overlay"></div>
-<div id="welcome">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading1" style="display:block;width:100%;z-index:17;">
-<h1 id="Heading1">SOLUTION TO ALL TECH PROBLEMS</h1>
-</div>
-<div id="wb_JavaScript1" style="display:block;width:100%;z-index:18;">
-<div style="color:#FFFFFF;font-size:16px;font-family:Arial;font-weight:normal;font-style:italic;text-align:center;text-decoration:none" id="typewriter-deluxe">
-<span id="typewriter-text" style="border-right: 0.08em solid #FFFFFF;"></span>
-</div>
-<script>
-var data = "Don't forget to subscribe to our social media channels...Thank you for choosing us.";
-var lines = data.split('^');
-var reverse = false;
-var index = 0;
-var text = '';
-var typeWriterElement = document.getElementById("typewriter-text");
-function typeWriterDeluxe() 
-{
-   var i = index % lines.length;
-   var line = lines[i];
-   if (reverse) 
-   {
-      text = line.substring(0, text.length - 1);
-   } 
-   else 
-   {
-      text = line.substring(0, text.length + 1);
-   }
-   typeWriterElement.innerHTML = text;
-   var timeout = 250 - Math.random() * (250/2);
-   if (reverse) 
-   { 
-      timeout /= 2; 
-   }
-   if (!reverse && text === line) 
-   {
-      timeout = 5000;
-      reverse = true;
-   } 
-   else 
-   if (reverse && text === '') 
-   {
-      reverse = false;
-      index++;
-      timeout = 500;
-   }
-   setTimeout(typeWriterDeluxe, timeout);
-}
-typeWriterDeluxe();
-</script>
-</div>
-<div id="wb_Heading2" style="display:block;width:100%;z-index:19;">
-<h2 id="Heading2"></h2>
-</div>
-<div id="wb_Heading5" style="display:block;width:100%;z-index:20;">
-<h2 id="Heading5"></h2>
-</div>
-<div id="wb_ThemeableButton3" style="display:inline-block;width:163px;height:40px;z-index:21;">
-<a class="ui-button ui-corner-all" id="ThemeableButton3" href="" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>SUPPORT US</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading6" style="display:block;width:100%;z-index:22;">
-<h1 id="Heading6">Welcome to Dani-Tech Sol.</h1>
+<div id="wb_Heading6" style="display:block;width:100%;z-index:17;">
+<h1 id="Heading6"></h1>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/microsoft-office-online-google-chrome-1-e1446546106952.png" id="Image2" alt="" width="616" height="387">
+</div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:20;">
+<h1 id="Heading8"></h1>
+</div>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:'Open Sans';font-size:13px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Bookman Old Style';font-size:19px;">In the ever-evolving world of technology, Microsoft Office has stood as a cornerstone of productivity for decades. Whether you’re a student, professional, or entrepreneur, the Office suite offers a wide array of tools designed to simplify tasks, enhance collaboration, and boost efficiency. Let’s dive into what makes Microsoft Office the go-to solution for millions worldwide.<br><br>A Brief History<br><br>Microsoft Office was first introduced in 1989 as a bundle of applications, including Word, Excel, and PowerPoint. Over the years, it has grown into a comprehensive suite of tools tailored to meet the needs of various industries. The transition from standalone software to the cloud-based Microsoft 365 has further cemented its relevance in a digital-first world. There are various versions of Microsoft Office Suite, this include version 2003, 2007, 2010, 2013, 2019 and so on.<br><br>Key Applications and Their Uses<br><br>1. Microsoft Word<br><br>Arguably the most popular word processor globally, Word is essential for creating documents, reports, and essays. With features like real-time collaboration, advanced formatting options, and integration with cloud storage, Word remains a favorite for individuals and teams alike.<br><br>2. Microsoft Excel<br><br>Excel is the gold standard for data analysis and management. From simple budgets to complex financial models, its robust features, including formulas, pivot tables, and data visualization tools, make it indispensable for businesses and analysts.<br><br>3. Microsoft PowerPoint<br><br>Creating impactful presentations is a breeze with PowerPoint. Its wide range of templates, animations, and multimedia integration ensures that your ideas are communicated effectively and engagingly.<br><br>4. Microsoft Outlook<br><br>Outlook is more than just an email client. It’s a comprehensive tool for managing calendars, scheduling meetings, and organizing contacts, making it a favorite among professionals.<br><br>5. Microsoft Teams<br><br>In an era of remote work, Teams has emerged as a leading platform for communication and collaboration. With features like video conferencing, file sharing, and seamless integration with other Office apps, it’s a hub for teamwork.<br><br>6. Microsoft OneNote<br><br>For those who love to jot down ideas, OneNote offers a digital notebook experience. With its flexible structure and multimedia support, it’s perfect for notetaking, brainstorming, and organizing information.<br><br>Advantages of Microsoft Office Suite<br><br>Versatility<br><br>Microsoft Office caters to diverse needs, from academic writing and financial forecasting to project management and creative design.<br><br>Collaboration<br><br>Real-time co-authoring, file sharing, and integrated communication tools make collaboration seamless, even for distributed teams.<br><br>Integration<br><br>The apps within the Office suite are deeply integrated, enabling users to switch between tools effortlessly. For instance, data from Excel can be embedded in Word or PowerPoint presentations.<br><br>Accessibility<br><br>With Microsoft 365, users can access their files and applications from virtually anywhere, thanks to its cloud-first approach. This is particularly beneficial for remote workers and teams spread across different locations.<br><br>Subscription Models<br><br>Microsoft now offers flexible subscription plans under the Microsoft 365 umbrella, catering to individual, family, and business needs. These plans provide access to premium features, regular updates, and robust cloud storage options through OneDrive.<br><br>Tips for Maximizing Productivity with Microsoft Office<br><br>Leverage Templates: Save time by using built-in templates for documents, spreadsheets, and presentations.<br><br>Use Keyboard Shortcuts: Familiarize yourself with shortcuts to speed up tasks.<br><br>Explore Add-Ins: Enhance functionality by integrating third-party tools.<br><br>Stay Updated: Ensure you’re using the latest version to take advantage of new features and security updates.<br><br>Conclusion<br><br>Microsoft Office continues to be a powerhouse of productivity, adapting to the changing needs of its users. Its blend of versatility, collaboration, and innovation ensures it remains a vital tool for personal and professional growth. Whether you’re drafting a report, crunching numbers, or presenting ideas, Microsoft Office empowers you to work smarter and achieve more. <br><br>Do you have a favorite Microsoft Office tool? Share your experiences and tips in the comments session below!<br><br>You can download a sample of Microsoft Office 19 using the download button below.<br><br>Download Office Activator from </span><span style="color:#FA8072;font-family:'Bookman Old Style';font-size:19px;"><a href="./Office-activator.html">here</a></span><span style="color:#000000;font-family:'Open Sans';font-size:19px;"><br><br><br><br></span>
+</div>
+<a id="Button1" href="https://drive.usercontent.google.com/download?id=1OTpxdqBdjibCLD6CHCGqzhiT_twJMv-e&export=download" style="display:inline-block;width:85px;height:30px;z-index:23;">Download</a>
+</div>
+<div class="col-2">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:24;">
+<a href="https://www.ldplayer.net/?n=39282916#utm_source=aff&utm_medium=aff&utm_campaign=aff39282916"><img src="images/300x600.jpg" id="Image3" alt="" width="293" height="586"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
@@ -291,16 +243,6 @@ typeWriterDeluxe();
 <div class="col-3">
 <div class="col-3-padding">
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Divider1">
-<div id="Divider1-overlay"></div>
-<div id="Divider1">
-<div class="row">
-<div class="col-1">
-<hr id="DividerLine1" style="display:block;width: 100%;z-index:23;">
 </div>
 </div>
 </div>
