@@ -84,6 +84,16 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-88 }, 600, 'easeOutExpo');
    });
+   $("a[href*='#booksLayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_booksLayoutGrid1').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutExpo');
+   });
    $("a[href*='#storesCards']").click(function(event)
    {
       event.preventDefault();
@@ -109,21 +119,6 @@ $(document).ready(function()
    {
       onScrollabout();
    });
-   $("a[href*='#booksLayoutGrid1']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_booksLayoutGrid1').offset().top }, 600, 'easeOutExpo');
-   });
-   $("a[href*='#booksLayoutGrid2']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_booksLayoutGrid2').offset().top }, 600, 'easeOutExpo');
-   });
-   $("a[href*='#LayoutGrid1']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutExpo');
-   });
    $("a[href*='#faqLayoutGrid']").click(function(event)
    {
       event.preventDefault();
@@ -148,6 +143,11 @@ $(document).ready(function()
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_reviewsLayoutGrid').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'easeOutExpo');
    });
    $("a[href*='#contact']").click(function(event)
    {
@@ -354,7 +354,99 @@ $(document).ready(function()
 <div class="col-2">
 <div class="col-2-padding">
 <div id="wb_introImage" style="display:block;width:100%;height:auto;z-index:20;">
-<img src="images/—Pngtree—afro mother hugging baby_14661757.png" id="introImage" alt="" width="447" height="447">
+<img src="images/mom.png" id="introImage" alt="" width="447" height="447">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_booksLayoutGrid1">
+<div id="booksLayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_booksCard1" style="display:flex;width:100%;z-index:21;" class="card">
+<div id="booksCard1-card-body">
+<a href="https://amzn.to/4jlrA7r" title="Bestseller #1" class="stretched-link"><img id="booksCard1-card-item0" src="images/71xEfn8Qi8L._AC_SX425_.jpg" width="425" height="360" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="booksCard1-card-item1">HP 15.6" Business Laptop, Free Microsoft Office 2024 Lifetime License</div>
+<div id="booksCard1-card-item2">3K+ bought in past month</div>
+<hr id="booksCard1-card-item3">
+<hr id="booksCard1-card-item4">
+<div id="booksCard1-card-item5">Copilot AI Chat, HD Touchscreen Display, Intel 6-Core i3-1215U 4.4 GHz, 16GB RAM, 1TB SSD, Long Battery Life, Windows 11 Pro. Free Microsoft Office LTSC Profession Plus 2024 with Lifetime license. Including Word, Excel, OneNote, Outlook, PowerPoint, Publisher, Access. Office 2024 is pre-installed and activated, Key is not needed and provided. Please DO NOT install Office 365, which invalidates the Office 2024 license.</div>
+</div>
+<div id="booksCard1-card-item6"><a href="https://amzn.to/4jlrA7r" class="stretched-link">Buy Now</a></div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:22;" class="card">
+<div id="Card1-card-body">
+<a href="https://amzn.to/4iqYu58" title="Bestseller #1" class="stretched-link"><img id="Card1-card-item0" src="images/61gKkYQn6lL._AC_SX425_.jpg" width="425" height="304" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="Card1-card-item1">Acer Aspire 3 A315-24P-R7VH Slim Laptop | 15.6" Full HD IPS Display</div>
+<div id="Card1-card-item2">4K+ bought in past month</div>
+<hr id="Card1-card-item3">
+<hr id="Card1-card-item4">
+<div id="Card1-card-item5">AMD Ryzen 3 7320U Quad-Core Processor | AMD Radeon Graphics | 8GB LPDDR5 | 128GB NVMe SSD | Wi-Fi 6 | Windows 11 Home in S Mode. Purposeful Design: Travel with ease and look great doing it with the Aspire's 3 thin, light design.Ready-to-Go Performance: The Aspire 3 is ready-to-go with the latest AMD Ryzen 3 7320U Processor with Radeon Graphics—ideal for the entire family, with performance and productivity at the core.Visibly Stunning: Experience sharp details and crisp colors on the 15.6" Full HD IPS display with 16:9 aspect ratio and narrow bezels.</div>
+<hr id="Card1-card-item6">
+</div>
+<div id="Card1-card-item7"><a href="https://amzn.to/4iqYu58" class="stretched-link">Buy Now</a></div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:23;" class="card">
+<div id="Card2-card-body">
+<a href="https://amzn.to/43WHPTy" title="Bestseller #1" class="stretched-link"><img id="Card2-card-item0" src="images/81GrCeuCzxL._AC_SX425_.jpg" width="425" height="323" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="Card2-card-item1">ASUS ROG Strix G16 Gaming Laptop, 165Hz Display, NVIDIA® GeForce RTX™ 4060, Intel Core i7-13650HX, 16GB DDR5, 1TB PCIe Gen4 SSD, Wi-Fi 6E, Windows 11, G614JV-AS74</div>
+<div id="Card2-card-item2">2.5K+ bought in past month</div>
+<hr id="Card2-card-item3">
+<hr id="Card2-card-item4">
+<div id="Card2-card-item5">POWER UP YOUR PLAY - Win more games with Windows 11, a 13th Gen Intel Core i7-13650HX processor, and an NVIDIA GeForce RTX 4060 Laptop GPU at 140W Max TGP.<br>BLAZING FAST MEMORY AND STORAGE – Multitask swiftly with 16GB of DDR5-4800MHz</div>
+</div>
+<div id="Card2-card-item6"><a href="https://amzn.to/43WHPTy" class="stretched-link">Buy Now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card6" style="display:flex;width:100%;z-index:24;" class="card">
+<div id="Card6-card-body">
+<img id="Card6-card-item0" src="images/81IjVvOXGdL._AC_SX569_.jpg" width="569" height="865" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card6-card-item1">Apple iPad (10.2-Inch, Wi-Fi, 32GB) - Space Gray (Renewed)</div>
+<div id="Card6-card-item2">6K+ bought in past month</div>
+<hr id="Card6-card-item3">
+<hr id="Card6-card-item4">
+<div id="Card6-card-item5">Smart Connector. 3.5 mm headphone jack. Stereo speakers. On/Off - Sleep/Wake. Home/Touch ID sensor. Dual microphones. Volume up/down. Nano-SIM tray (cellular models). Lightning connector</div>
+</div>
+<div id="Card6-card-item6"><a href="https://amzn.to/42CnfFP" class="stretched-link">Buy Now</a></div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card7" style="display:flex;width:100%;z-index:25;" class="card">
+<div id="Card7-card-body">
+<a href="https://amzn.to/3RqhplK" title="Bestseller #1" class="stretched-link"><img id="Card7-card-item0" src="images/61d46oYQgdL._AC_SX425_.jpg" width="300" height="425" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="Card7-card-item1">Samsung Galaxy Tab A9+ Tablet 11”</div>
+<div id="Card7-card-item2">10K+ bought in past month</div>
+<hr id="Card7-card-item3">
+<hr id="Card7-card-item4">
+<div id="Card7-card-item5">Android Tablet, Big Screen, Quad Speakers, Upgraded Chipset, Multi Window Display, Slim, Light, Durable Design, US Version, 2024, Graphite. BIG SCREEN. FAMILY-SIZED FUN: Bring fun home to everyone with a bright, engaging screen; great for videos, games or fun time for the kids</div>
+<hr id="Card7-card-item6">
+</div>
+<div id="Card7-card-item7"><a href="https://amzn.to/3RqhplK" class="stretched-link">Buy Now</a></div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card8" style="display:flex;width:100%;z-index:26;" class="card">
+<div id="Card8-card-body">
+<a href="https://amzn.to/42SQ3uT" title="Bestseller #1" class="stretched-link"><img id="Card8-card-item0" src="images/Picture2.jpg" width="624" height="862" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="Card8-card-item1">SAMSUNG Galaxy Tab S6 Lite 10.4' 64GB WiFi Android Tablet</div>
+<div id="Card8-card-item2">2K+ bought in past month</div>
+<hr id="Card8-card-item3">
+<hr id="Card8-card-item4">
+<div id="Card8-card-item5">S Pen Included, Gaming Ready, Long Battery Life, Slim Metal Design, Expandable Storage, US Version, Oxford Gray, Amazon Exclusive (2024) GALAXY TAB S6 LITE, MORE POWERFUL THAN EVER: With an included S Pen, crystal-clear display and Dolby Atmos surround sound, this reliable tablet is all about fun plus a little work</div>
+</div>
+<div id="Card8-card-item6"><a href="https://amzn.to/3Ep2hSJ" class="stretched-link">Buy Now</a></div>
 </div>
 </div>
 </div>
@@ -364,7 +456,7 @@ $(document).ready(function()
 <div id="stores">
 <div class="row">
 <div class="col-1">
-<div id="wb_storesHeading" style="display:block;width:100%;z-index:21;">
+<div id="wb_storesHeading" style="display:block;width:100%;z-index:27;">
 <h2 id="storesHeading">Recommended products:</h2>
 </div>
 </div>
@@ -373,21 +465,21 @@ $(document).ready(function()
 </div>
 <div id="wb_storesCards">
 <div id="storesCards">
-<div id="wb_storesCard1" style="display:flex;z-index:22;" class="card">
+<div id="wb_storesCard1" style="display:flex;z-index:28;" class="card">
 <div id="storesCard1-card-body">
 <div id="storesCard1-card-item0"><a href="http://"><i class="fa fa-apple"></i></a></div>
 <div id="storesCard1-card-item1">iBooks Store</div>
 <div id="storesCard1-card-item2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut "</div>
 </div>
 </div>
-<div id="wb_storesCard2" style="display:flex;z-index:23;" class="card">
+<div id="wb_storesCard2" style="display:flex;z-index:29;" class="card">
 <div id="storesCard2-card-body">
 <div id="storesCard2-card-item0"><a href="http://"><i class="fa fa-amazon"></i></a></div>
 <div id="storesCard2-card-item1">Amazon Store</div>
 <div id="storesCard2-card-item2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut "</div>
 </div>
 </div>
-<div id="wb_storesCard3" style="display:flex;z-index:24;" class="card">
+<div id="wb_storesCard3" style="display:flex;z-index:30;" class="card">
 <div id="storesCard3-card-body">
 <div id="storesCard3-card-item0"><a href="http://"><i class="fa fa-book"></i></a></div>
 <div id="storesCard3-card-item1">Google Play Books</div>
@@ -401,22 +493,22 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_aboutImage" style="display:block;width:100%;height:auto;z-index:25;">
+<div id="wb_aboutImage" style="display:block;width:100%;height:auto;z-index:31;">
 <img src="images/BookMockup69.png" id="aboutImage" alt="" width="447" height="291">
 </div>
 </div>
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="wb_aboutHeading" style="display:block;width:100%;z-index:26;">
+<div id="wb_aboutHeading" style="display:block;width:100%;z-index:32;">
 <h2 id="aboutHeading">About the Author</h2>
 </div>
 <div id="wb_aboutText">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.. </p>
 </div>
-<a id="aboutButton" href="" style="display:inline-block;width:166px;height:51px;z-index:28;">About the Author</a>
-<hr id="aboutLine" style="display:block;width: 100%;z-index:29;">
-<div id="wb_aboutAvatar" style="display:inline-block;width:85px;height:85px;z-index:30;">
+<a id="aboutButton" href="" style="display:inline-block;width:166px;height:51px;z-index:34;">About the Author</a>
+<hr id="aboutLine" style="display:block;width: 100%;z-index:35;">
+<div id="wb_aboutAvatar" style="display:inline-block;width:85px;height:85px;z-index:36;">
 <img src="images/author.jpg" id="aboutAvatar" alt="" width="85" height="85">
 </div>
 <div id="wb_aboutName">
@@ -427,135 +519,12 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_booksLayoutGrid1">
-<div id="booksLayoutGrid1">
-<div class="row">
-<div class="col-1">
-<div id="wb_booksCard1" style="display:flex;width:100%;z-index:32;" class="card">
-<div id="booksCard1-card-body">
-<img id="booksCard1-card-item0" src="images/pixabay002.jpg" width="1280" height="847" alt="Bestseller #1" title="Bestseller #1">
-<div id="booksCard1-card-item1">HARDWARE</div>
-<hr id="booksCard1-card-item2">
-<div id="booksCard1-card-item3">We repair computers, mobile phones, printers and help in fixing all your hardware problems</div>
-</div>
-<div id="booksCard1-card-item4" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #1" data-item-number="SKU001" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Get a fix</a></div>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Card1" style="display:flex;width:100%;z-index:33;" class="card">
-<div id="Card1-card-body">
-<img id="Card1-card-item0" src="images/pexels005.jpeg" width="1880" height="1255" alt="Bestseller #1" title="Bestseller #1">
-<div id="Card1-card-item1">SOFTWARE</div>
-<hr id="Card1-card-item2">
-<div id="Card1-card-item3">We do software development, installation, updates, website, database among others. </div>
-</div>
-<div id="Card1-card-item4" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #1" data-item-number="SKU001" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Book a fix</a></div>
-</div>
-</div>
-<div class="col-3">
-<div id="wb_Card2" style="display:flex;width:100%;z-index:34;" class="card">
-<div id="Card2-card-body">
-<img id="Card2-card-item0" src="images/pexels004.jpeg" width="1880" height="1253" alt="Bestseller #1" title="Bestseller #1">
-<div id="Card2-card-item1">TUITION</div>
-<hr id="Card2-card-item2">
-<div id="Card2-card-item3">When it comes to teaching you tech skills, you can count on us</div>
-</div>
-<div id="Card2-card-item4" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #1" data-item-number="SKU001" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Enroll</a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_booksLayoutGrid2">
-<div id="booksLayoutGrid2">
-<div class="row">
-<div class="col-1">
-<div id="wb_booksCard4" style="display:flex;width:100%;z-index:35;" class="card">
-<div id="booksCard4-card-body">
-<img id="booksCard4-card-item0" src="images/BookMockup39.png" width="600" height="400" alt="Bestseller #4" title="Bestseller #4">
-<div id="booksCard4-card-item1">BESTSELLER #4</div>
-<div id="booksCard4-card-item2">$29.99</div>
-<hr id="booksCard4-card-item3">
-<div id="booksCard4-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-<div id="booksCard4-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #4" data-item-number="SKU004" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_booksCard5" style="display:flex;width:100%;z-index:36;" class="card">
-<div id="booksCard5-card-body">
-<img id="booksCard5-card-item0" src="images/BookMockup86.png" width="600" height="400" alt="Bestseller #5" title="Bestseller #5">
-<div id="booksCard5-card-item1">BESTSELLER #5</div>
-<div id="booksCard5-card-item2">$29.99</div>
-<hr id="booksCard5-card-item3">
-<div id="booksCard5-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-<div id="booksCard5-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #5" data-item-number="SKU005" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
-</div>
-</div>
-<div class="col-3">
-<div id="wb_booksCard6" style="display:flex;width:100%;z-index:37;" class="card">
-<div id="booksCard6-card-body">
-<img id="booksCard6-card-item0" src="images/BookMockup95.png" width="1024" height="682" alt="Bestseller #6" title="Bestseller #6">
-<div id="booksCard6-card-item1">BESTSELLER #6</div>
-<div id="booksCard6-card-item2">$29.99</div>
-<hr id="booksCard6-card-item3">
-<div id="booksCard6-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-<div id="booksCard6-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #6" data-item-number="SKU006" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid1">
-<div id="LayoutGrid1">
-<div class="row">
-<div class="col-1">
-<div id="wb_booksCard7" style="display:flex;width:100%;z-index:38;" class="card">
-<div id="booksCard7-card-body">
-<img id="booksCard7-card-item0" src="images/BookMockup155.png" width="600" height="400" alt="Bestseller #7" title="Bestseller #7">
-<div id="booksCard7-card-item1">BESTSELLER #7</div>
-<div id="booksCard7-card-item2">$29.99</div>
-<hr id="booksCard7-card-item3">
-<div id="booksCard7-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-<div id="booksCard7-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #7" data-item-number="SKU007" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_booksCard8" style="display:flex;width:100%;z-index:39;" class="card">
-<div id="booksCard8-card-body">
-<img id="booksCard8-card-item0" src="images/BookMockup193.png" width="600" height="400" alt="Bestseller #8" title="Bestseller #8">
-<div id="booksCard8-card-item1">BESTSELLER #8</div>
-<div id="booksCard8-card-item2">$29.99</div>
-<hr id="booksCard8-card-item3">
-<div id="booksCard8-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-<div id="booksCard8-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #8" data-item-number="SKU008" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
-</div>
-</div>
-<div class="col-3">
-<div id="wb_booksCard9" style="display:flex;width:100%;z-index:40;" class="card">
-<div id="booksCard9-card-body">
-<img id="booksCard9-card-item0" src="images/BookMockup205.png" width="600" height="400" alt="Bestseller #9" title="Bestseller #9">
-<div id="booksCard9-card-item1">BESTSELLER #9</div>
-<div id="booksCard9-card-item2">$29.99</div>
-<hr id="booksCard9-card-item3">
-<div id="booksCard9-card-item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-<div id="booksCard9-card-item5" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #9" data-item-number="SKU009" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Add to Cart</a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_faqLayoutGrid">
 <div id="faqLayoutGrid">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Heading7" style="display:block;width:100%;z-index:41;">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:38;">
 <h2 id="Heading7">About Us</h2>
 </div>
 <div id="wb_Text2">
@@ -563,7 +532,7 @@ $(document).ready(function()
 <span style="color:#F5F5F5;font-family:Calibri;font-size:20px;line-height:26px;">Dani-Tech Solutions is a leading provider of technology solutions for businesses of all sizes. Our mission is to help our clients harness the power of technology to achieve their business goals and stay ahead of the competition.</span>
 </div>
 </div>
-<div id="wb_ThemeableButton4" style="display:inline-block;width:163px;height:40px;z-index:43;">
+<div id="wb_ThemeableButton4" style="display:inline-block;width:163px;height:40px;z-index:40;">
 <a class="ui-button ui-corner-all" id="ThemeableButton4" href="./about_us.html" style="width:100%;height:100%;"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>READ MORE</a>
 </div>
 </div>
@@ -575,16 +544,16 @@ $(document).ready(function()
 <div id="reviewsLayoutGrid">
 <div class="row">
 <div class="col-1">
-<div id="wb_reviewsHeading" style="display:block;width:100%;z-index:44;">
+<div id="wb_reviewsHeading" style="display:block;width:100%;z-index:41;">
 <h2 id="reviewsHeading">What Readers Say About My Books</h2>
 </div>
 <div id="wb_reviewsText">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
 </div>
-<a id="reviewsButton" href="#booksLayoutGrid1" title="Visit Store" style="display:inline-block;width:166px;height:51px;z-index:46;">Visit Store</a>
+<a id="reviewsButton" href="#booksLayoutGrid1" title="Visit Store" style="display:inline-block;width:166px;height:51px;z-index:43;">Visit Store</a>
 </div>
 <div class="col-2">
-<div id="wb_reviewsCard1" style="display:flex;width:100%;z-index:47;" class="card">
+<div id="wb_reviewsCard1" style="display:flex;width:100%;z-index:44;" class="card">
 <div id="reviewsCard1-card-body">
 <div id="reviewsCard1-card-item0">“</div>
 <div id="reviewsCard1-card-item1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </div>
@@ -592,7 +561,7 @@ $(document).ready(function()
 <div id="reviewsCard1-card-item3">Alec Tricity</div>
 </div>
 </div>
-<div id="wb_reviewsCard2" style="display:flex;width:100%;z-index:48;" class="card">
+<div id="wb_reviewsCard2" style="display:flex;width:100%;z-index:45;" class="card">
 <div id="reviewsCard2-card-body">
 <div id="reviewsCard2-card-item0">“</div>
 <div id="reviewsCard2-card-item1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </div>
@@ -602,7 +571,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_reviewsCard3" style="display:flex;width:100%;z-index:49;" class="card">
+<div id="wb_reviewsCard3" style="display:flex;width:100%;z-index:46;" class="card">
 <div id="reviewsCard3-card-body">
 <div id="reviewsCard3-card-item0">“</div>
 <div id="reviewsCard3-card-item1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </div>
@@ -610,13 +579,52 @@ $(document).ready(function()
 <div id="reviewsCard3-card-item3">Ellie Noise</div>
 </div>
 </div>
-<div id="wb_reviewsCard4" style="display:flex;width:100%;z-index:50;" class="card">
+<div id="wb_reviewsCard4" style="display:flex;width:100%;z-index:47;" class="card">
 <div id="reviewsCard4-card-body">
 <div id="reviewsCard4-card-item0">“</div>
 <div id="reviewsCard4-card-item1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </div>
 <hr id="reviewsCard4-card-item2">
 <div id="reviewsCard4-card-item3">Marsha Mallow</div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card3" style="display:flex;width:100%;z-index:48;" class="card">
+<div id="Card3-card-body">
+<img id="Card3-card-item0" src="images/pixabay002.jpg" width="1280" height="847" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card3-card-item1">HARDWARE</div>
+<hr id="Card3-card-item2">
+<div id="Card3-card-item3">We repair computers, mobile phones, printers and help in fixing all your hardware problems</div>
+</div>
+<div id="Card3-card-item4" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #1" data-item-number="SKU001" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Get a fix</a></div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card5" style="display:flex;width:100%;z-index:49;" class="card">
+<div id="Card5-card-body">
+<img id="Card5-card-item0" src="images/pexels005.jpeg" width="1880" height="1255" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card5-card-item1">SOFTWARE</div>
+<hr id="Card5-card-item2">
+<div id="Card5-card-item3">We do software development, installation, updates, website, database among others. </div>
+</div>
+<div id="Card5-card-item4" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #1" data-item-number="SKU001" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Book a fix</a></div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card4" style="display:flex;width:100%;z-index:50;" class="card">
+<div id="Card4-card-body">
+<img id="Card4-card-item0" src="images/pexels004.jpeg" width="1880" height="1253" alt="Bestseller #1" title="Bestseller #1">
+<div id="Card4-card-item1">TUITION</div>
+<hr id="Card4-card-item2">
+<div id="Card4-card-item3">When it comes to teaching you tech skills, you can count on us</div>
+</div>
+<div id="Card4-card-item4" data-ecommerce-platform="paypal" data-business="" data-item-name="Bestseller #1" data-item-number="SKU001" data-amount="29.99" data-currency-code="USD" data-success-url="http://www.yourwebsite.com/" data-cancel-url="http://www.yourwebsite.com/" data-cmd="_cart"><a href="#" class="stretched-link">Enroll</a></div>
 </div>
 </div>
 </div>
