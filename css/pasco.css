@@ -315,7 +315,7 @@ body
    -webkit-text-stroke: 1px #000000;
    text-stroke: 1px #000000;
 }
-#wb_Heading8
+#wb_Heading1
 {
    background-color: transparent;
    background-image: none;
@@ -327,7 +327,7 @@ body
    padding: 0;
    text-align: center;
 }
-#Heading8
+#Heading1
 {
    color: #FFFFFF;
    font-family: "Open Sans";
@@ -480,7 +480,7 @@ body
    background-image: none;
    color: #000000;
 }
-#wb_LayoutGrid3
+#wb_LayoutGrid1
 {
    clear: both;
    position: relative;
@@ -495,19 +495,19 @@ body
    box-sizing: border-box;
    margin: 0;
 }
-#LayoutGrid3
+#LayoutGrid1
 {
    box-sizing: border-box;
    padding: 0 15px 0 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#LayoutGrid3 > .row
+#LayoutGrid1 > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
 {
    box-sizing: border-box;
    font-size: 0;
@@ -516,11 +516,11 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
 {
    float: left;
 }
-#LayoutGrid3 > .row > .col-1
+#LayoutGrid1 > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -529,7 +529,7 @@ body
    width: 50%;
    text-align: left;
 }
-#LayoutGrid3 > .row > .col-2
+#LayoutGrid1 > .row > .col-2
 {
    background-color: transparent;
    background-image: none;
@@ -538,22 +538,22 @@ body
    width: 50%;
    text-align: left;
 }
-#LayoutGrid3:before,
-#LayoutGrid3:after,
-#LayoutGrid3 .row:before,
-#LayoutGrid3 .row:after
+#LayoutGrid1:before,
+#LayoutGrid1:after,
+#LayoutGrid1 .row:before,
+#LayoutGrid1 .row:after
 {
    display: table;
    content: " ";
 }
-#LayoutGrid3:after,
-#LayoutGrid3 .row:after
+#LayoutGrid1:after,
+#LayoutGrid1 .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
 {
    float: none;
    width: 100% !important;

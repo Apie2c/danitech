@@ -9,12 +9,13 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&400,700&display=swap" rel="stylesheet">
 <link href="css/Dani-Tech_Sol.css" rel="stylesheet">
-<link href="css/Create-bootable-drive.css" rel="stylesheet">
+<link href="css/laptops.css" rel="stylesheet">
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.dropdown.min.js" defer></script>
+<script src="js/wwb20.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
@@ -69,10 +70,37 @@ document.addEventListener('DOMContentLoaded', function(event)
 <script>
 $(document).ready(function()
 {
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
    $("a[href*='#header']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#booksLayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_booksLayoutGrid1').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#about']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_about').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollabout()
+   {
+      var $obj = $("#wb_about");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollabout();
+   $(window).scroll(function(event)
+   {
+      onScrollabout();
    });
 });
 </script>
@@ -166,56 +194,78 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4">
+<div id="wb_booksLayoutGrid1">
+<div id="booksLayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading6" style="display:block;width:100%;z-index:17;">
-<h1 id="Heading6"></h1>
+<div id="wb_booksCard1" style="display:flex;width:100%;z-index:17;" class="card">
+<div id="booksCard1-card-body">
+<a href="https://amzn.to/4jlrA7r" title="Bestseller #1" class="stretched-link"><img id="booksCard1-card-item0" src="images/71xEfn8Qi8L._AC_SX425_.jpg" width="425" height="360" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="booksCard1-card-item1">HP 15.6" Business Laptop, Free Microsoft Office 2024 Lifetime License</div>
+<div id="booksCard1-card-item2">3K+ bought in past month</div>
+<hr id="booksCard1-card-item3">
+<hr id="booksCard1-card-item4">
+<div id="booksCard1-card-item5">Copilot AI Chat, HD Touchscreen Display, Intel 6-Core i3-1215U 4.4 GHz, 16GB RAM, 1TB SSD, Long Battery Life, Windows 11 Pro. Free Microsoft Office LTSC Profession Plus 2024 with Lifetime license. Including Word, Excel, OneNote, Outlook, PowerPoint, Publisher, Access. Office 2024 is pre-installed and activated, Key is not needed and provided. Please DO NOT install Office 365, which invalidates the Office 2024 license.</div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3">
-<div class="row">
-<div class="col-1">
-<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:18;">
-<img src="images/Picture.png" id="Image2" alt="" width="616" height="426">
-</div>
-<div id="wb_Heading8" style="display:block;width:100%;z-index:19;">
-<h1 id="Heading8"></h1>
-</div>
-<div id="wb_Text4">
-<span style="color:#000000;font-family:'Bookman Old Style';font-size:19px;"><br><br><br><br>A bootable Pen drive is an essential tool for installing operating systems, troubleshooting PCs, or carrying live systems. Creating one using Windows's Command Prompt (CMD) is straightforward and doesn’t require third-party software. Here’s a step-by-step guide to help you through the process.<br><br>Prerequisites<br><br>A USB pen drive with at least 8GB of storage (depending on the OS size).<br><br>A computer running Windows.<br><br>Steps to Create a Bootable Pen Drive<br><br>Insert the USB Drive: Plug your USB drive into your computer’s USB port. Make sure to back up any data on the drive, as the process will erase all existing data.<br><br>Open Command Prompt as Administrator<br><br>Press Windows + S and type cmd.<br><br>Right-click on the Command Prompt and select Run as administrator.<br><br>Start the Disk Partition Tool: In the Command Prompt, type “diskpart” and Press Enter. This will open the Disk Partition tool.<br><br>Type the following commands and press the Enter key after typing each line. Also, wait patiently for the command to execute before typing the next command.<br><br>list disk<br><br>Press Enter. Identify your USB drive from the list by its size.<br><br>select disk X<br><br>Replace X with the disk number of your USB drive and press Enter.<br><br>clean<br><br>Press Enter. This will erase all data and partitions on the drive.<br><br>create partition primary<br><br>Press Enter.<br><br>select partition 1<br><br>Press Enter.<br><br>active<br><br>Press Enter.<br><br>format fs=ntfs quick<br><br>Press Enter and wait for the format to complete.<br><br>assign<br><br>Press Enter. Note the assigned drive letter (e.g., F:).<br><br>Exit<br><br>Press Enter.<br><br>Your Bootable USB is Ready. You can now copy any operating system installation files to this USB drive and your USB drive is now bootable. Safely eject it and use it to boot your system.<br><br>you can watch a video tutorial below<br><br>Conclusion<br><br>Creating a bootable pen drive using Command Prompt is a reliable method that doesn’t require additional software. By mastering this skill, you can quickly prep<br><br><br></span>
-</div>
-<div id="wb_YouTube1" style="display:block;width:100%;z-index:21;">
-<iframe id="YouTube1" src="https://www.youtube.com/embed/xEcmC2--fIw?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
-
+<div id="booksCard1-card-item6"><a href="https://amzn.to/4jlrA7r" class="stretched-link">Buy Now</a></div>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:22;">
-<a href="https://www.ldplayer.net/?n=39282916#utm_source=aff&utm_medium=aff&utm_campaign=aff39282916"><img src="images/300x600.jpg" id="Image3" alt="" width="293" height="586"></a>
+<div id="wb_Card1" style="display:flex;width:100%;z-index:18;" class="card">
+<div id="Card1-card-body">
+<a href="https://amzn.to/4iqYu58" title="Bestseller #1" class="stretched-link"><img id="Card1-card-item0" src="images/61gKkYQn6lL._AC_SX425_.jpg" width="425" height="304" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="Card1-card-item1">Acer Aspire 3 A315-24P-R7VH Slim Laptop | 15.6" Full HD IPS Display</div>
+<div id="Card1-card-item2">4K+ bought in past month</div>
+<hr id="Card1-card-item3">
+<hr id="Card1-card-item4">
+<div id="Card1-card-item5">AMD Ryzen 3 7320U Quad-Core Processor | AMD Radeon Graphics | 8GB LPDDR5 | 128GB NVMe SSD | Wi-Fi 6 | Windows 11 Home in S Mode. Purposeful Design: Travel with ease and look great doing it with the Aspire's 3 thin, light design.Ready-to-Go Performance: The Aspire 3 is ready-to-go with the latest AMD Ryzen 3 7320U Processor with Radeon Graphics—ideal for the entire family, with performance and productivity at the core.Visibly Stunning: Experience sharp details and crisp colors on the 15.6" Full HD IPS display with 16:9 aspect ratio and narrow bezels.</div>
+<hr id="Card1-card-item6">
+</div>
+<div id="Card1-card-item7"><a href="https://amzn.to/4iqYu58" class="stretched-link">Buy Now</a></div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:19;" class="card">
+<div id="Card2-card-body">
+<a href="https://amzn.to/43WHPTy" title="Bestseller #1" class="stretched-link"><img id="Card2-card-item0" src="images/81GrCeuCzxL._AC_SX425_.jpg" width="425" height="323" alt="Bestseller #1" title="Bestseller #1"></a>
+<div id="Card2-card-item1">ASUS ROG Strix G16 Gaming Laptop, 165Hz Display, NVIDIA® GeForce RTX™ 4060, Intel Core i7-13650HX, 16GB DDR5, 1TB PCIe Gen4 SSD, Wi-Fi 6E, Windows 11, G614JV-AS74</div>
+<div id="Card2-card-item2">2.5K+ bought in past month</div>
+<hr id="Card2-card-item3">
+<hr id="Card2-card-item4">
+<div id="Card2-card-item5">POWER UP YOUR PLAY - Win more games with Windows 11, a 13th Gen Intel Core i7-13650HX processor, and an NVIDIA GeForce RTX 4060 Laptop GPU at 140W Max TGP.<br>BLAZING FAST MEMORY AND STORAGE – Multitask swiftly with 16GB of DDR5-4800MHz</div>
+</div>
+<div id="Card2-card-item6"><a href="https://amzn.to/43WHPTy" class="stretched-link">Buy Now</a></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid8">
-<div id="LayoutGrid8">
+<div id="wb_about">
+<div id="about">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
+<div id="wb_aboutImage" style="display:block;width:100%;height:auto;z-index:20;">
+<img src="images/BookMockup69.png" id="aboutImage" alt="" width="447" height="291">
+</div>
 </div>
 </div>
 <div class="col-2">
 <div class="col-2-padding">
+<div id="wb_aboutHeading" style="display:block;width:100%;z-index:21;">
+<h2 id="aboutHeading">About the Author</h2>
 </div>
+<div id="wb_aboutText">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.. </p>
 </div>
-<div class="col-3">
-<div class="col-3-padding">
+<a id="aboutButton" href="" style="display:inline-block;width:166px;height:51px;z-index:23;">About the Author</a>
+<hr id="aboutLine" style="display:block;width: 100%;z-index:24;">
+<div id="wb_aboutAvatar" style="display:inline-block;width:85px;height:85px;z-index:25;">
+<img src="images/author.jpg" id="aboutAvatar" alt="" width="85" height="85">
+</div>
+<div id="wb_aboutName">
+<p><span style="font-weight:bold;">Author Name</span><br/>Writer, Blogger and TV Personality</p>
+</div>
 </div>
 </div>
 </div>
